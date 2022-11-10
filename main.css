@@ -1,0 +1,109 @@
+body {
+    margin: 50px auto;
+    width: 70%;
+    color: black;
+    font-family:'Times New Roman';
+}
+
+a:hover{
+    color: lightblue;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-style:italic;
+}
+
+.top_button{
+    font-weight: bolder;
+    font-style: normal;
+    font-family: 'Arial Black';
+}
+
+.profile_block img {
+    width: 150px;
+    height: 210px;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.profile_block p {
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.profile {
+  margin: 1em;
+  color: black;
+  font-size: 18px;
+}
+
+.project {
+  margin: 1em;
+}
+
+.project_title {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-style: normal;
+  font-family: 'Cascadia Code SemiBold'
+}
+
+.project_subtitle {
+    margin: 2em;
+    color: grey;
+    font-style:italic;
+    font-weight: bold;
+}
+
+.project_intro {
+    color: black;
+}
+
+.education {
+  margin: 1em;
+}
+
+.education_term {
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
+  font-style:italic;
+  margin-right: 5em;
+}
+
+nav ul, footer ul {
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+.container li::marker {
+    font-family: monospace;
+}
