@@ -5,6 +5,11 @@ body {
     font-family:'Times New Roman';
 }
 
+.photo{
+    float: left;
+    width: 5%;
+}
+
 a:hover{
     color: lightblue;
 }
@@ -12,7 +17,6 @@ a:hover{
 a{
     text-decoration: none;
     color: blue;
-    font-style:italic;
 }
 
 .top_button{
@@ -95,8 +99,8 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 

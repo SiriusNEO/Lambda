@@ -32,27 +32,26 @@
             <h1>Chaofan Lin (in Chinese: 林超凡)</h1>
 
             <div class="profile_block">
-                <img src="avatar2.jpg" width="100px" alt="" />
+                <img src="avatar.jpg" width="100px" alt="" />
                 <p>
-
                 <div class="profile">
                     I'm an undergraduate at
                     <a href="https://acm.sjtu.edu.cn/home">ACM Honors Class</a>,
                     <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>,
                     advised by
                     <a href="https://apex.sjtu.edu.cn/members/yyu">Prof. Yong Yu</a>.
-                    And I'm a research intern at
-                    <a href="https://catalyst.cs.cmu.edu/">Catalyst, Carnegie Mellon University</a>
-                    and is now focusing on the design of relax (a
+                    Now I'm am very fortunate to work with
+                    <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a>
+                    in the System Group of
+                    <a href="https://www.msra.cn/">Microsoft Research Asia</a>.
+                    Previously I'm a research intern at
+                    <a href="https://catalyst.cs.cmu.edu/">Catalyst, Carnegie Mellon University</a>, focusing on the design of relax (a
                     high-level IR for <a href="https://tvm.apache.org/">Apache TVM</a>)
-                    training workflow. <br><br>
-                    I am interested in designing computer systems and studying elegant mathematical theories.
-                    Specifically, my research interest lies in domain-specific computer systems,
-                    such as systems for AI and compilers. I'm also enthusiastic about using self-contained math theory
-                    to explain a computer system. <br><br>
-                    I am passionate about "building": build a delicate system or build self-consistent theory.
-                    Every work of mine is an artwork of an artist for me. I believe there is no silver bullet
-                    and compromisation is necessary in design.
+                    training workflow. Also a commiter of the <a href="https://mlc.ai/">MLC community</a>. <br><br>
+                    My research interest lies in <span style="color: red;">computer system and architecture</span>, specially in
+                    designing domain-specific computer systems, to make some applications (such as AI, scientific computing, etc.)
+                    easy to use and boost their performance. I am also interested in studying elegant mathematical theories. <br><br>
+                    I believe there is no silver bullet and compromisation is necessary in design.
                 </div>
                 </p>
                 <br>
@@ -62,25 +61,53 @@
 
             <h2>Education</h2>
             <div class="education">
+                <div class="photo">
+                <img src="sjtu-icon.png" width="50px" alt="" />
+                </div>
                 <span class="education_term">Bachelor in Computer Science, Shanghai Jiao Tong University.</span>
                 <span style="color: black;">Aug. 2020 – Present.</span>
                 <br>
                 A member of ACM Honor Class, Zhiyuan College.
             </div>
 
+            <h2>Experience</h2>
+            <div class="education">
+                <div class="photo">
+                    <img src="ms-icon.jpg" width="40px" alt="" />
+                    </div>
+                <span class="education_term">Research Intern, Microsoft Research Asia.</span>
+                <span style="color: black;">Jun.2023 - Present.</span>
+                <br>
+                System Group, MSRA.
+            </div>
+
+            <div class="education">
+                <div class="photo">
+                    <img src="cmucsd-icon.jpg" width="40px" alt="" />
+                    </div>
+                <span class="education_term">Research Intern, Carnegie Mellon University.</span>
+                <span style="color: black;">Aug. 2022 – Jun.2023.</span>
+                <br>
+                Working on TVM Unity compiler.
+            </div>
+
             <h2>Projects</h2>
 
             <div class="project">
+                <div class="photo">
+                    <img src="tvm-logo-small.png" height="40px" alt="" />
+                    </div>
                 <a href="https://github.com/apache/tvm" class="project_title">apache/tvm</a>
                 <span class="project_subtitle">Reseach</span> <br>
                 <div class="project_intro">
-                    Working on the TVM Unity (Especially the development of Relax IR). More experimental work can be
-                    found
-                    in this fork: <a href="https://github.com/mlc-ai/relax">mlc-ai/relax</a>.
+                    Working on the TVM Unity compiler. Developed a training workflow in Relax.
                 </div>
             </div>
 
             <div class="project">
+                <div class="photo">
+                    <img src="masterball.png" height="50px" alt="" />
+                    </div>
                 <a href="https://github.com/SiriusNEO/Masterball" class="project_title">Masterball</a>
                 <span class="project_subtitle">Course Project of Compiler Design</span> <br>
                 <div class="project_intro">
@@ -95,6 +122,9 @@
             </div>
 
             <div class="project">
+                <div class="photo">
+                    <img src="nightwizard.jpg" height="50px" alt="" />
+                    </div>
                 <a href="https://github.com/SiriusNEO/NightWizard" class="project_title">NightWizard</a>
                 <span class="project_subtitle">Course Project of Computer Architecture </span> <br>
                 <div class="project_intro">
@@ -103,56 +133,6 @@
                     at most 120MHz clock rate to pass all testcases. It runs on Basys3 FPGA Board (XC7A35T-ICPG236C).
                     I modified the traditional framework of this course project so that it can
                     operator two RAMs, which makes it possible to separate RAM into IRAM and DRAM.
-                </div>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/CoconutJVM" class="project_title">CoconutJVM</a>
-                <div class="project_intro">
-                    A toy JVM (Java Virtual Machine) written in C++. Now it doesn't contain JIT complication so its
-                    execution engine
-                    is just a Java bytecode interpreter.
-                </div>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/fscape" class="project_title">fscape</a>
-                <span class="project_subtitle">Course Project of Operating System</span> <br>
-                <div class="project_intro">
-                    A game based on a simple self-implemented FUSE filesystem. Use ’cd’ to move, find a specified file
-                    in the file
-                    system to escape from this file system maze.
-                </div>
-            </div>
-
-            <div class="project">
-                <a href="https://paperl.github.io/Human-3D-Diffusion/" class="project_title"> DiffAnnot: Improved Neural
-                    Annotator with Denoising Diffusion Model </a>
-                <span class="project_subtitle">Course Project of Computer Vision</span> <br>
-                <div class="project_intro">
-                    Use diffusion model to refine the result of previous 3D human reconstruction methods. I lead our
-                    group finishing
-                    this course project and it is accepted by the conference
-                    <a href="http://www.icipmc.net/chinese.html/">ICIPMC 2023</a>.
-                </div>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/DHTengu" class="project_title">Distributed Hash Table</a>
-                <span class="project_subtitle">Course Project of Principle and Practice of Computer Algorithms</span>
-                <br>
-                <div class="project_intro">
-                    DHT (chord & kademlia protocol) implementation in Golang.
-                </div>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/Miko-Python-Interpreter" class="project_title">Python
-                    Interpreter</a>
-                <span class="project_subtitle">Course Project of Programming Design (A)</span>
-                <br>
-                <div class="project_intro">
-                    A simple Python3 Interpreter using antlr4 framework.
                 </div>
             </div>
 
@@ -210,7 +190,7 @@
     </div>
     <footer></footer>
     <br>
-    <span style="color: grey; margin-right: 1em;">Edited by Chaofan Lin, Apr. 18, 2023.</span>
+    <span style="color: grey; margin-right: 1em;">Edited by Chaofan Lin, Aug. 16, 2023.</span>
     <img src="bei_an_icon.png" />
     <span style="color: grey;">闽ICP备2022013458号-2</span>
 </body>
