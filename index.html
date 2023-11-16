@@ -1,3 +1,16 @@
+<!--
+    Lambda: My personal (academic) page
+
+    It doesn't rely on any third-party libs and there is no any fancy JavaScript
+    effects. It's just a static page with self-written HTML and CSS.
+
+    The goal of this page is to convey useful information to those who want to get
+    to know me as quickly and efficiently as possible,
+
+    2023, Chaofan Lin (SiriusNEO)
+-->
+
+
 <!DOCTYPE html>
 <html>
 
@@ -7,15 +20,18 @@
             background-image: url('img/lambda.png');
         }
     </style>
-    <title>Chaofan Lin</title>
+    <title>Chaofan Lin - Lambda</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </head>
 
 <body>
+
+    <!-- Navigation, some quick links -->
     <nav>
         <ul>
-            <li><a href="/" class="top_button">[*this]</a></li>
+            <li><a href="/" class="top_button">[Lambda]</a></li>
             <li><a href="mailto:siriusneo@sjtu.edu.cn" class="top_button">[Email]</a></li>
             <li><a href="https://me.tric.space/" class="top_button">[Metric Space (My Blog)]</a></li>
             <li><a href="resume.pdf" class="top_button">[CV]</a></li>
@@ -24,9 +40,13 @@
         </ul>
     </nav>
 
+
+    <footer></footer>
+
+    <!-- Profile -->
+
     <div class="container">
         <div class="blurb">
-            <footer></footer>
             <h1>Chaofan Lin (in Chinese: 林超凡)</h1>
 
             <div class="profile_block">
@@ -38,23 +58,27 @@
                     <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>,
                     advised by
                     <a href="https://apex.sjtu.edu.cn/members/yyu">Prof. Yong Yu</a>.
-                    Now I'm am very fortunate to work with
+                    Now I'm very fortunate to work with
                     <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a>
                     in the System Group of
                     <a href="https://www.msra.cn/">Microsoft Research Asia</a>.
                     Previously I'm a research intern at
-                    <a href="https://tvm.apache.org/">Apache TVM community</a>, focusing on the
+                    <a href="https://tvm.apache.org/">Apache TVM community</a>, working closely with
+                    <a href="https://tqchen.com">Tianqi Chen</a> and
+                    focusing on the
                     design of relax (a
                     graph-level IR for tvm)
                     training workflow. <br><br>
                     My research interest mainly lies in <span style="color: red;">computer systems and
-                        architecture</span>,
-                    specially in crafting systems for emerging real-world applications (e.g. AI, scientific computing) to
-                    bridge the gap between efficiency (low-level) and usability (user-side).
-                    I am also an amateur math & programming language enthusiast.
-                    <br><br>
+                        architecture</span>.
+                    I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
+                    bridge the gap between efficiency (low-level) and usability (user-side).<br><br>
 
-                    I believe there is no silver bullet in designing and architecting.
+                    I believe there is no silver bullet in designing and architecting. And I have a dream that
+                    <b>everyone</b> in the future can be a programmer instead of being discouraged by the dark-and-confusing
+                    bash cmd.
+
+                    <br><br>
                     <!-- Personally I appreciate two types of research works:
                     Algorithms which are <span style="color: green;">simple, explainable</span> and
                     <span style="color: green;">related to classical ideas in Computer Science</span>;
@@ -68,118 +92,128 @@
 
             <footer></footer>
 
-            <!-- <h2>Publications</h2>
+
+
+            <h2>Publications</h2>
+
+            <a href="publications.html">[Publications]</a>
+
+            <!--
+
+            Don't have publications for now, very vegatable
 
             - -->
 
-            <h2>Open Source Projects</h2>
+
+            <h2>Projects</h2>
 
             <div class="project">
                 <a href="https://github.com/apache/tvm" class="project_title">apache/tvm</a>
+                <span class="project_subtitle">Deep Learning Compilers, Graph-level IR, Automatic Differentiation.</span> <br>
                 <div class="project_intro">
-                    Working on the TVM Unity compiler. Developed a training workflow in Relax.
+                    Working on the TVM Unity compiler. Developed an algorithm of automatic differentiation (AD) and
+                    a training workflow in <a href="https://arxiv.org/abs/2311.02103">Relax IR</a>.
                 </div>
             </div>
 
-            <div class="project">
-                <a href="https://github.com/ACMClassOJ/TesutoHime" class="project_title">ACM Class OnlineJudge</a>
-                <div class="project_intro">
-                    Online Judge for students in SJTU. Previous maintainer.
-                </div>
-            </div>
+            Click <a href="projects.html">[Projects]</a> to see a full list including research projects, course projects and my hobby projects.
 
-            <h2>Talks</h2>
-            <div class="project">
-                <a href="https://www.youtube.com/watch?v=bsfpzMufyNw" class="project_title">Cross Platform Training
-                    Using Automatic Differentiaton on Relax IR</a>
-                <div class="project_intro">
-                    At TVM Conference 2023.
-                </div>
-            </div>
-            <div class="project">
-                <a href="ac2023/" class="project_title">CS2965: Advanced Compiler</a>
-                <div class="project_intro">
-                    I gave several lectures on Polyhedra model, Loop Optimization, Linear-Scan Register Allocation
+            <h2>Talks & Teaching</h2>
+
+            <ul>
+                <li>Cross Platform Training Using Automatic Differentiaton on Relax IR. At TVM Conference 2023. <a href="https://www.youtube.com/watch?v=bsfpzMufyNw">[Video]</a></li>
+                <li>TA @ CS2965: Advanced Compiler. I gave several lectures on Polyhedra model, Loop Optimization, Linear-Scan Register
+                    Allocation
                     Algorithm and
-                    other interesting topics. <a href="ac2023/">[Click here]</a> to see the notes of my lectures.
-                </div>
-            </div>
-            <div class="project">
-                <a href="paper-reading/" class="project_title">Paper Reading Related Talks</a>
-                <div class="project_intro">
-                    - OSDI2021: SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs. <a
-                        href="paper-reading/osdi2021-SANRAZOR.pdf">[Slide]</a>
-                </div>
-            </div>
+                    other interesting topics. <a href="ac2023/">[Slides]</a>.</li>
+                <li>Paper reading: SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs. (OSDI2021) <a href="paper-reading/osdi2021-SANRAZOR.pdf">[Slide]</a>.</li>
+            </ul>
+
+        <h2>The Journey</h2>
+
+        <table border=0
+            style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:10px;">
+            <tbody>
+                <tr>
+                    <td style="padding:5px;width:25%">
+                        <img src='img/ms-icon.jpg' width="60">
+                    </td>
+                    <td style="padding:5px;width:100%">
+                        <class style="color:gray"><big>Internship</big> </class>
+                        <class><big> | Microsoft Research Asia </big></class>
+                        <br>
+                        June'20, 2023 - Present
+                        <br>
+                        <br>Research topics: Distributed system, Large Language Models (LLMs) serving system.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border=0
+            style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:10px;">
+            <tbody>
+                <tr>
+                    <td style="padding:5px;width:25%">
+                        <img src='img/cmucsd-icon.jpg' width="60">
+                    </td>
+                    <td style="padding:5px;width:100%">
+                        <class style="color:gray"><big>Internship</big> </class>
+                        <class><big> | Catalyst, Carnegie Mellon University </big></class>
+                        <br>
+                        July'22, 2022 - June'23, 2023
+                        <br>
+                        <br>Research topics: TVM, Deep learning compilers, Graph-level IR for deep learning.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table border=0
+            style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:10px;">
+            <tbody>
+                <tr>
+                    <td style="padding:5px;width:25%">
+                        <img src='img/sjtu-icon.png' width="60">
+                    </td>
+                    <td style="padding:5px;width:100%">
+                        <class style="color:gray"><big>B.S. in Computer Science</big> </class>
+                        <class><big> | Shanghai Jiao Tong University </big></class>
+                        <br>
+                        Sep'1, 2020 - Present
+                        <br>
+                        <br>Member of ACM Class, Zhiyuan College. Got a distinguished GPA (1/?) during my B.S.
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
 
-            <h2>Course Projects</h2>
+        <h2>Miscellaneous</h2>
 
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/Masterball" class="project_title">Masterball</a>
-                <span class="project_subtitle">Course Project of Compiler Design</span> <br>
-                <div class="project_intro">
-                    A Compiler from Mx* language (which is a C++ & Java like
-                    language designed for this course) to RV32I Assembly, with many optimizations on LLVM IR.
-                    Its performance is close to GCC O2 on testcases.
-                    And as an exploration of CS2965, Advanced Compiler Project, I implemented a interpreter of LLVM IR
-                    with simple Just-In-Time (JIT) technique supported.
-                    This assignment received a <span style="color: red;">perfect score</span> in
-                    two different compilation courses.
-                </div>
-            </div>
+        <ul>
+            <li>I am also an amateur math & programming language enthusiast.</li>
+            <li>My Chinese name "Chaofan (超凡)" stands for "superordinary". Some friends call me "Chaos" as a nickname.</li>
+            <li>I have been playing Pokémon since I was eight years old. I didn't own a GBA at that time,
+                so I used a PC simulator, where I encountered programming in my first time. </li>
+            <li>The style of this homepage is inspired by my Logic teacher, <a
+                    href="https://basics.sjtu.edu.cn/~chen/">Yijia Chen</a>.</li>
+        </ul>
 
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/NightWizard" class="project_title">NightWizard</a>
-                <span class="project_subtitle">Course Project of Computer Architecture </span> <br>
-                <div class="project_intro">
-                    A RISC-V CPU implemented in Verilog HDL. It uses Tomasulo algorithm for dynamic scheduling and
-                    supports
-                    at most 120MHz clock rate to pass all testcases. It runs on Basys3 FPGA Board (XC7A35T-ICPG236C).
-                    I modified the traditional framework of this course project so that it can
-                    operator two RAMs, which makes it possible to separate RAM into IRAM and DRAM.
-                </div>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/fscape" class="project_title">fscape</a>
-                <span class="project_subtitle">Course Project of Operating System</span> <br>
-                <div class="project_intro">
-                    A File System Escape Game. Use `cd` to move, find `exit` in this randomly generated
-                    file system. Welcome to try breaking the SPEEDRUN record if you are a proficient
-                    shell user!
-                </div>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/Alice" class="project_title">Alice</a>
-                <span class="project_subtitle">Course Project of Model Checking</span> <br>
-                <div class="project_intro">
-                    Alice is an [A]utomatic [Li]near Temporal Logic [C]hecking Syst[e]m implemented in C++.
-                    It implements serveral model checking algorithms described in class. And it can
-                    check the correctness of given LTL formulas.
-                </div>
-            </div>
-
-            <h2>Entertainment</h2>
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/Moment" class="project_title">Moment</a>
-                A chatting bot which can be deployed to QQ. You can also chat with it in Linux shell.
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/Frozen" class="project_title">
-                    Frozen!</a>
-                A simple survival game implemented in QT.
-            </div>
-        </div>
     </div>
+
+    </div>
+
     <footer></footer>
     <br>
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
-        Last Edited, Oct. 20, 2023 |
-        Themed by <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, a theme for static academic page written by me.
+        Last Edited, Nov. 20, 2023 |
+        Total views: <span id="busuanzi_value_site_pv"></span> |
+        Source code: <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, feel free to use and modify.
     </span>
     <a href="http://beian.miit.gov.cn/"><span style="color: grey; font-size: 12px"><i>闽ICP备2022013458号</i></span></a>
 </body>
