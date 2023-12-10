@@ -44,22 +44,43 @@ a{
 
 .project_title {
   color: black;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   font-weight: bolder;
   font-style: normal;
-  font-family: 'Cascadia Code SemiBold'
 }
 
 .project_subtitle {
     margin: 2em;
-    color: grey;
-    font-style:italic;
-    font-weight: bold;
+    color: green;
+    font-size: 14px;
 }
 
 .project_intro {
     color: black;
+}
+
+.pub {
+    margin: 0.75em;
+}
+
+.pub_title {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.pub_member {
+    color: black;
+    font-size: 14px;
+}
+
+.pub_conf {
+    color: deeppink;
+    font-size: 18;
+    font-style: italic;
 }
 
 .education {

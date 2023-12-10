@@ -32,11 +32,10 @@
     <nav>
         <ul>
             <li><a href="/" class="top_button">[Lambda]</a></li>
-            <li><a href="mailto:siriusneo@sjtu.edu.cn" class="top_button">[Email]</a></li>
-            <li><a href="https://me.tric.space/" class="top_button">[Metric Space (My Blog)]</a></li>
-            <li><a href="resume.pdf" class="top_button">[CV]</a></li>
-            <li><a href="https://github.com/siriusneo" class="top_button">[Github]</a></li>
-            <li><a href="https://www.zhihu.com/people/chaofanlin" class="top_button">[Zhihu]</a></li>
+            <li><a href="https://me.tric.space/" class="top_button">[Metric Space (Blog)]</a></li>
+            <li><a href="cv.html" class="top_button">[CV/Experience]</a></li>
+            <li><a href="publications.html" class="top_button">[Publications]</a></li>
+            <li><a href="projects.html" class="top_button">[Projects]</a></li>
         </ul>
     </nav>
 
@@ -50,7 +49,11 @@
             <h1>Chaofan Lin (in Chinese: 林超凡)</h1>
 
             <div class="profile_block">
-                <img src="img/avatar.jpg" height="300px" alt="" />
+                <table border=0><tbody><tr>
+                <td style="padding:5px;width:25%">
+                    <img src="img/avatar.jpg" height="300px" alt="" />
+                </td>
+                <td style="padding:5px;width:100%">
                 <p>
                 <div class="profile">
                     I'm an undergraduate at
@@ -70,14 +73,22 @@
                     graph-level IR for tvm)
                     training workflow. <br><br>
                     My research interest mainly lies in <span style="color: red;">computer systems and
-                        architecture</span>.
-                    I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
-                    bridge the gap between efficiency (low-level) and usability (user-side).<br><br>
+                        architecture</span>, specially in aspects of: 1. Compute your bits (<b>MLSys</b>). 2. Store your bits (<b>DB</b>).
+                    <!-- I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
+                    bridge the gap between efficiency (low-level) and usability (user-side). -->
+                    <br><br>
 
-                    I believe there is no silver bullet in designing and architecting. Hence
-                    there is no perfect solution for all ad-hoc reallife problems.
+                    I believe there is no silver bullet in designing and architecting.
+                    <!-- Hence
+                    there is no perfect solution for all ad-hoc reallife problems. -->
                     However, I will try my best to narrow the gap between theory and practice, hoping that one
-                    day <b>everyone</b> can appreciate and benefit from those great ideas in Computer Science.
+                    day <b>everyone</b> can appreciate and benefit from those great ideas in Computer Science.<br><br>
+
+                    My commonly used ID/pseudonym is `SiriusNEO`. You can also call me "chaos"
+                    as a homonym of my real name.
+                    <a href="mailto:siriusneo@sjtu.edu.cn">[Email]</a> /
+                    <a href="https://github.com/siriusneo">[Github]</a> /
+                    <a href="https://www.zhihu.com/people/chaofanlin">[Zhihu]</a>.
                     <!-- Personally I appreciate two types of research works:
                     Algorithms which are <span style="color: green;">simple, explainable</span> and
                     <span style="color: green;">related to classical ideas in Computer Science</span>;
@@ -87,6 +98,10 @@
                     <!-- <br><br><i style="font-size: x-small;">Gexian Mountain, Oct. 2023.</i> -->
                 </div>
                 </p>
+                </td>
+                </tr>
+                </tbody>
+            </table>
                 <br>
             </div>
 
@@ -94,9 +109,7 @@
 
 
 
-            <h2>Publications</h2>
-
-            <a href="publications.html">[Publications Full List]</a>
+            <h2>Selected Publications & Projects</h2>
 
             <!--
 
@@ -104,14 +117,23 @@
 
             - -->
 
+            <!-- Publications.
 
-            <h2>Projects</h2>
+            <div class="pub">
+                <span class="pub_title">A Test Publication Title: I Don't Know What It Is!</span><br>
+                <div class="pub_member">
+                    Chaofan Lin
+                </div>
+                <div class="pub_conf">
+                    WCC (Wild Chicken Conf)
+                </div>
+                <a href="">[paper]</a> | <a href="">[code]</a>
+            </div> -->
 
-            <a href="projects.html">[Projects Full List]</a> (including research projects, course projects and my hobby projects.)
-
+            Projects.
 
             <div class="project">
-                <a href="https://github.com/apache/tvm" class="project_title">apache/tvm</a>
+                <a href="https://github.com/apache/tvm" class="project_title">Apache TVM</a>
                 <span class="project_subtitle">Deep Learning Compilers, Graph-level IR, Automatic Differentiation.</span> <br>
                 <div class="project_intro">
                     Working on the TVM Unity compiler. Developed an algorithm of automatic differentiation (AD) and
@@ -135,9 +157,10 @@
                 </div>
             </div>
 
-            <h2>Talks & Teaching</h2>
+            <h2>Talks, Writing, Teaching</h2>
 
             <ul>
+                <li>vLLM Source Code Analysis. <a href="https://me.tric.space/2023/07/10/vllm/">[Blog (in Chinese)]</a></li>
                 <li>Cross Platform Training Using Automatic Differentiaton on Relax IR. At TVM Conference 2023. <a href="https://www.youtube.com/watch?v=bsfpzMufyNw">[Video]</a></li>
                 <li>TA @ CS2965: Advanced Compiler. I gave several lectures on Polyhedra model, Loop Optimization, Linear-Scan Register
                     Allocation
@@ -146,73 +169,11 @@
                 <li>Paper reading: SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs. (OSDI2021) <a href="paper-reading/osdi2021-SANRAZOR.pdf">[Slide]</a>.</li>
             </ul>
 
-        <h2>The Journey</h2>
-
-        <table border=0
-            style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:10px;">
-            <tbody>
-                <tr>
-                    <td style="padding:5px;width:25%">
-                        <img src='img/ms-icon.jpg' width="60">
-                    </td>
-                    <td style="padding:5px;width:100%">
-                        <class style="color:gray"><big>Internship</big> </class>
-                        <class><big> | Microsoft Research Asia </big></class>
-                        <br>
-                        June'20, 2023 - Present
-                        <br>
-                        <br>Research topics: Distributed system, Large Language Models (LLMs) serving system.
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table border=0
-            style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:10px;">
-            <tbody>
-                <tr>
-                    <td style="padding:5px;width:25%">
-                        <img src='img/cmucsd-icon.jpg' width="60">
-                    </td>
-                    <td style="padding:5px;width:100%">
-                        <class style="color:gray"><big>Internship</big> </class>
-                        <class><big> | Catalyst, Carnegie Mellon University </big></class>
-                        <br>
-                        July'22, 2022 - June'23, 2023
-                        <br>
-                        <br>Research topics: TVM, Deep learning compilers, Graph-level IR for deep learning.
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table border=0
-            style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:10px;">
-            <tbody>
-                <tr>
-                    <td style="padding:5px;width:25%">
-                        <img src='img/sjtu-icon.png' width="60">
-                    </td>
-                    <td style="padding:5px;width:100%">
-                        <class style="color:gray"><big>B.S. in Computer Science</big> </class>
-                        <class><big> | Shanghai Jiao Tong University </big></class>
-                        <br>
-                        Sep'1, 2020 - Present
-                        <br>
-                        <br>Member of ACM Class, Zhiyuan College. Got a distinguished GPA (1/?) during my B.S.
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
 
         <h2>Miscellaneous</h2>
 
         <ul>
-            <li>I am also an amateur math & programming language enthusiast.</li>
+            <li>I am an amateur enthusiast in: Math, Programming Language, Compilers.</li>
             <li>My Chinese name "Chaofan (超凡)" stands for "superordinary". Some friends call me "Chaos" as a nickname.</li>
             <li>I have been playing Pokémon since I was eight years old. I didn't own a GBA at that time,
                 so I used a PC simulator, where I encountered programming in my first time. </li>
@@ -226,6 +187,8 @@
 
     <footer></footer>
     <br>
+
+    <!-- Footer -->
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
         Last Edited, Dec. 10, 2023 |
