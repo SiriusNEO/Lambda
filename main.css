@@ -21,8 +21,8 @@ a{
 }
 
 .profile_block img {
-    width: 150px;
-    height: 210px;
+    width: 350px;
+    height: auto;
     float: left;
     margin-right: 1.5em;
 }

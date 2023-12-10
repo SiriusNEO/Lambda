@@ -50,7 +50,7 @@
             <h1>Chaofan Lin (in Chinese: 林超凡)</h1>
 
             <div class="profile_block">
-                <img src="img/avatar.jpg" width="100px" alt="" />
+                <img src="img/avatar.jpg" height="300px" alt="" />
                 <p>
                 <div class="profile">
                     I'm an undergraduate at
@@ -74,17 +74,17 @@
                     I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
                     bridge the gap between efficiency (low-level) and usability (user-side).<br><br>
 
-                    I believe there is no silver bullet in designing and architecting. And I have a dream that
-                    <b>everyone</b> in the future can be a programmer instead of being discouraged by the dark-and-confusing
-                    bash cmd.
-
-                    <br><br>
+                    I believe there is no silver bullet in designing and architecting. Hence
+                    there is no perfect solution for all ad-hoc reallife problems.
+                    However, I will try my best to narrow the gap between theory and practice, hoping that one
+                    day <b>everyone</b> can appreciate and benefit from those great ideas in Computer Science.
                     <!-- Personally I appreciate two types of research works:
                     Algorithms which are <span style="color: green;">simple, explainable</span> and
                     <span style="color: green;">related to classical ideas in Computer Science</span>;
                     Systems which are
                     <span style="color: green;">scalable, promising</span> and <span style="color: green;">elegantly
                         organized</span>. -->
+                    <!-- <br><br><i style="font-size: x-small;">Gexian Mountain, Oct. 2023.</i> -->
                 </div>
                 </p>
                 <br>
@@ -96,7 +96,7 @@
 
             <h2>Publications</h2>
 
-            <a href="publications.html">[Publications]</a>
+            <a href="publications.html">[Publications Full List]</a>
 
             <!--
 
@@ -107,6 +107,9 @@
 
             <h2>Projects</h2>
 
+            <a href="projects.html">[Projects Full List]</a> (including research projects, course projects and my hobby projects.)
+
+
             <div class="project">
                 <a href="https://github.com/apache/tvm" class="project_title">apache/tvm</a>
                 <span class="project_subtitle">Deep Learning Compilers, Graph-level IR, Automatic Differentiation.</span> <br>
@@ -116,7 +119,21 @@
                 </div>
             </div>
 
-            Click <a href="projects.html">[Projects]</a> to see a full list including research projects, course projects and my hobby projects.
+            <div class="project">
+                <a href="https://github.com/SiriusNEO/Masterball" class="project_title">Masterball</a>
+                <span class="project_subtitle">Compiler Design, Java, LLVM, Compiler Optimization, Register Allocation,
+                    JIT.</span> <br>
+                <div class="project_intro">
+                    A Compiler from a C++ & Java like to RV32I Assembly, with many optimizations on LLVM
+                    IR, e.g. ADCE, CSE, SCCP, LICP.
+                    Its performance is close to GCC O2 on testcases.
+                    Received a <span style="color: red;">perfect score</span> in
+                    two different compilation courses. <br>
+                    Also check out the sub-project for JIT (Just-in-time) complication. It's a virtual machine for LLVM
+                    (quite simple):
+                    <a href="https://github.com/SiriusNEO/DarkSwordVM">[DarkSwordVM]</a>.
+                </div>
+            </div>
 
             <h2>Talks & Teaching</h2>
 
@@ -211,7 +228,7 @@
     <br>
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
-        Last Edited, Nov. 20, 2023 |
+        Last Edited, Dec. 10, 2023 |
         Total views: <span id="busuanzi_value_site_pv"></span> |
         Source code: <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, feel free to use and modify.
     </span>
