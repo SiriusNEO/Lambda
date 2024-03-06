@@ -27,15 +27,9 @@ a{
     margin-right: 1.5em;
 }
 
-.profile_block p {
-    line-height: 20px;
-    overflow: hidden;
-}
-
 .profile {
   margin: 1em;
-  color: black;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .project {
@@ -52,7 +46,7 @@ a{
 
 .project_subtitle {
     margin: 2em;
-    color: green;
+    color: gray;
     font-size: 14px;
 }
 
@@ -95,6 +89,20 @@ a{
   margin-right: 5em;
 }
 
+.cv_exp {
+    width: 100%;
+    max-width: 800px;
+    border: 0px;
+    border-spacing: 0px;
+    border-collapse: separate;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.cv_list {
+    font-size: large;
+}
+
 nav ul, footer ul {
     padding: 0px;
     list-style: none;
@@ -122,8 +130,4 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
-}
-
-.container li::marker {
-    font-family: monospace;
 }

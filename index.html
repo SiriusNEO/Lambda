@@ -44,158 +44,94 @@
 
     <!-- Profile -->
 
-    <div class="container">
-        <div class="blurb">
-            <h1>Chaofan Lin (in Chinese: 林超凡)</h1>
+    <h1>Chaofan Lin (in Chinese: 林超凡)</h1>
 
-            <div class="profile_block">
-                <table border=0>
-                    <tbody>
-                        <tr>
-                            <td style="padding:5px;width:25%">
-                                <img src="img/avatar4.png" height="300px" alt="" />
-                            </td>
-                            <td style="padding:5px;width:100%">
-                                <p>
-                                <div class="profile">
-                                    I'm an undergraduate at
-                                    <a href="https://acm.sjtu.edu.cn/home">ACM Honors Class</a>,
-                                    <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>,
-                                    advised by
-                                    <a href="https://apex.sjtu.edu.cn/members/yyu">Prof. Yong Yu</a>.
-                                    Now I'm very fortunate to work with
-                                    <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a>
-                                    in the System Group of
-                                    <a href="https://www.msra.cn/">Microsoft Research Asia</a>.
-                                    Previously I'm a research intern at
-                                    <a href="https://tvm.apache.org/">Apache TVM community</a>, working closely with
-                                    <a href="https://tqchen.com">Tianqi Chen</a> and
-                                    focusing on the
-                                    design of relax (a
-                                    graph-level IR for tvm)
-                                    training workflow. <br><br>
-                                    My research interest mainly lies in <span style="color: red;">computer systems and
-                                        architecture</span>, specially in aspects of: 1. Compute your bits
-                                    (<b>MLSys</b>). 2. Store your bits (<b>DB</b>).
-                                    <!-- I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
-                    bridge the gap between efficiency (low-level) and usability (user-side). -->
-                                    <br><br>
+    <div class="profile_block">
+        <table border=0
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:10px;">
+            <tbody>
+                <tr>
+                    <td>
+                        <img align="left" src="img/avatar4.png"
+                            style="width:100%;max-width:80%;margin-right:50px;margin-left:40px;margin-top:20px;border:0px solid #eee;">
+                    </td>
+                    <td>
+                        <div class="profile">
+                            I'm an undergraduate at
+                            <a href="https://acm.sjtu.edu.cn/home">ACM Honors Class</a>,
+                            <a href="https://www.sjtu.edu.cn/">Shanghai Jiao Tong University</a>,
+                            advised by
+                            <a href="https://apex.sjtu.edu.cn/members/yyu">Prof. Yong Yu</a>.
+                            Now I'm very fortunate to work with
+                            <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a>
+                            in the System Group of
+                            <a href="https://www.msra.cn/">Microsoft Research Asia</a>.
+                            Previously I'm a research intern at
+                            <a href="https://tvm.apache.org/">Apache TVM community</a>, working closely with
+                            <a href="https://tqchen.com">Tianqi Chen</a> and
+                            focusing on the design of relax (a graph-level IR for tvm) training workflow.
+                            Please check out my <a href="cv.html">CV</a> if interested. <br><br>
 
-                                    I believe there is no silver bullet in designing and architecting.
-                                    <!-- Hence
-                    there is no perfect solution for all ad-hoc reallife problems. -->
-                                    However, I will try my best to narrow the gap between theory and practice, hoping
-                                    that one
-                                    day everyone can appreciate and benefit from great algorithms/systems.<br><br>
-
-                                    My commonly used ID/pseudonym is `SiriusNEO`. You can also call me "chaos"
-                                    as a homonym of my real name.
-                                    <a href="mailto:siriusneo@sjtu.edu.cn">[Email]</a> /
-                                    <a href="https://github.com/siriusneo">[Github]</a> /
-                                    <a href="https://www.zhihu.com/people/chaofanlin">[Zhihu]</a>.
-                                    <!-- Personally I appreciate two types of research works:
-                    Algorithms which are <span style="color: green;">simple, explainable</span> and
-                    <span style="color: green;">related to classical ideas in Computer Science</span>;
-                    Systems which are
-                    <span style="color: green;">scalable, promising</span> and <span style="color: green;">elegantly
-                        organized</span>. -->
-                                    <!-- <br><br><i style="font-size: x-small;">Gexian Mountain, Oct. 2023.</i> -->
-                                </div>
-                                </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br>
-            </div>
-
-            <footer></footer>
-
-
-
-            <h2>Selected Publications & Projects</h2>
-
-            <!--
-
-            Don't have publications for now, very vegatable
-
-            - -->
-
-            <!-- Publications.
-
-            <div class="pub">
-                <span class="pub_title">A Test Publication Title: I Don't Know What It Is!</span><br>
-                <div class="pub_member">
-                    Chaofan Lin
-                </div>
-                <div class="pub_conf">
-                    WCC (Wild Chicken Conf)
-                </div>
-                <a href="">[paper]</a> | <a href="">[code]</a>
-            </div> -->
-
-            Projects.
-
-            <div class="project">
-                <a href="https://github.com/apache/tvm" class="project_title">Apache TVM</a>
-                <span class="project_subtitle">Deep Learning Compilers, Graph-level IR, Automatic
-                    Differentiation.</span> <br>
-                <div class="project_intro">
-                    Working on the TVM Unity compiler. Developed an algorithm of automatic differentiation (AD) and
-                    a training workflow in <a href="https://arxiv.org/abs/2311.02103">Relax IR</a>.
-                </div>
-            </div>
-
-            <div class="project">
-                <a href="https://github.com/SiriusNEO/Masterball" class="project_title">Masterball</a>
-                <span class="project_subtitle">Compiler Design, Java, LLVM, Compiler Optimization, Register Allocation,
-                    JIT.</span> <br>
-                <div class="project_intro">
-                    A Compiler from a C++ & Java like to RV32I Assembly, with many optimizations on LLVM
-                    IR, e.g. ADCE, CSE, SCCP, LICP.
-                    Its performance is close to GCC O2 on testcases.
-                    Received a <span style="color: red;">perfect score</span> in
-                    two different compilation courses. <br>
-                    Also check out the sub-project for JIT (Just-in-time) complication. It's a virtual machine for LLVM
-                    (quite simple):
-                    <a href="https://github.com/SiriusNEO/DarkSwordVM">[DarkSwordVM]</a>.
-                </div>
-            </div>
-
-            <h2>Talks, Writing, Teaching</h2>
-
-            <ul>
-                <li>vLLM Source Code Analysis. <a href="https://me.tric.space/2023/07/10/vllm/">[Blog (in Chinese)]</a>
-                </li>
-                <li>Cross Platform Training Using Automatic Differentiaton on Relax IR. At TVM Conference 2023. <a
-                        href="https://www.youtube.com/watch?v=bsfpzMufyNw">[Video]</a></li>
-                <li>TA @ CS2965: Advanced Compiler. I gave several lectures on Polyhedra model, Loop Optimization,
-                    Linear-Scan Register
-                    Allocation
-                    Algorithm and
-                    other interesting topics. <a href="ac2023/">[Slides]</a>.</li>
-                <li>Paper reading: SANRAZOR: Reducing Redundant Sanitizer Checks in C/C++ Programs. (OSDI2021) <a
-                        href="paper-reading/osdi2021-SANRAZOR.pdf">[Slide]</a>.</li>
-            </ul>
-
-
-            <h2>Miscellaneous</h2>
-
-            <ul>
-                <!-- <li>I am an amateur enthusiast in: Math, Programming Language, Compilers.</li> -->
-                <li>My Chinese name "Chaofan (超凡)" stands for "superordinary".</li>
-                <li>
-                    Creating a great game on my own has always been my dream.
-                    My favorite is Pokémon, which I have played since I was eight years old.
-                    <!-- I didn't own a GBA at that time, so I used an emulator. -->
-                </li>
-                <li>The style of this homepage is inspired by my Logic teacher, <a
-                        href="https://basics.sjtu.edu.cn/~chen/">Yijia Chen</a>.</li>
-            </ul>
-
-        </div>
-
+                            I go by `SiriusNEO` on most websites. And I usually use `chaosfan`
+                            as a variant of my real name.
+                            <a href="mailto:siriusneo@sjtu.edu.cn">[Email]</a> /
+                            <a href="https://github.com/siriusneo">[Github]</a> /
+                            <a href="https://www.zhihu.com/people/chaofanlin">[Zhihu]</a>.
+                            <!-- Personally I appreciate two types of research works:
+        Algorithms which are <span style="color: green;">simple, explainable</span> and
+        <span style="color: green;">related to classical ideas in Computer Science</span>;
+        Systems which are
+        <span style="color: green;">scalable, promising</span> and <span style="color: green;">elegantly
+            organized</span>. -->
+                            <!-- <br><br><i style="font-size: x-small;">Gexian Mountain, Oct. 2023.</i> -->
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
     </div>
+
+    <footer></footer>
+
+    <h2>Research</h2>
+
+    <div style="font-size: 18px;">
+        <p>
+            My research interest mainly lies in <span style="color: red;">computer systems and
+                architecture</span>, specially in optimizing machine learning and other data intensive
+            applications.
+            <!-- I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
+bridge the gap between efficiency (low-level) and usability (user-side). -->
+            I believe there is no silver bullet in designing and architecting.
+            <!-- Hence
+there is no perfect solution for all ad-hoc reallife problems. -->
+            However, I will try my best to narrow the gap between theory and practice, hoping
+            that one
+            day everyone can appreciate and benefit from great algorithms/systems.
+        </p>
+
+        You can check my <a href="publications.html">[Publications]</a> /
+        <a href="projects.html">[Projects]</a> for details.
+        <ul>
+            <li>Deep learning compiler <a href="https://tvm.apache.org">TVM</a>, specially two sub-projects:
+                Relax-Training and MLC-Lora.</li>
+        </ul>
+    </div>
+
+    <footer></footer>
+
+    <h2>Miscellaneous</h2>
+    <ul>
+        <!-- <li>I am an amateur enthusiast in: Math, Programming Language, Compilers.</li> -->
+        <li>My Chinese name "Chaofan (超凡)" stands for "superordinary".</li>
+        <li> I am a Nintendo fan. I have played Pokémon since I was eight years old and own a collection of its
+            game cards (from G1 to G9)!
+            <!-- I didn't own a GBA at that time, so I used an emulator. -->
+        </li>
+        <li>The style of this homepage is inspired by my Logic teacher, <a
+                href="https://basics.sjtu.edu.cn/~chen/">Yijia Chen</a>.</li>
+    </ul>
 
     <footer></footer>
     <br>
@@ -203,7 +139,7 @@
     <!-- Footer -->
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
-        Last Edited, Jan. 13, 2024 |
+        Last Edited, Mar. 6, 2024 |
         Total views: <span id="busuanzi_value_site_pv"></span> |
         Source code: <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, feel free to use and modify.
     </span>

@@ -27,12 +27,13 @@
 
 <body>
 
+
     <!-- Navigation, some quick links -->
     <nav>
         <ul>
             <li><a href="/" class="top_button">[Lambda]</a></li>
             <li><a href="https://me.tric.space/" class="top_button">[Metric Space (Blog)]</a></li>
-            <li><a href="cv.html" class="top_button">[CV/Experience]</a></li>
+            <li><a href="cv.html" class="top_button">[CV]</a></li>
             <li><a href="publications.html" class="top_button">[Publications]</a></li>
             <li><a href="projects.html" class="top_button">[Projects]</a></li>
         </ul>
@@ -40,41 +41,106 @@
 
     <footer></footer>
 
-    <div class="container">
 
-        <h3>Research Projects</h3>
+    <h3>Research Projects & Open Source</h3>
 
-        <div class="project">
-            <a href="https://github.com/apache/tvm" class="project_title">Apache TVM</a>
-            <span class="project_subtitle">Deep Learning Compilers, Graph-level IR, Automatic Differentiation.</span>
+    <div class="project">
+        <img src="img/tvm-logo-small.png">
+        <a href="https://github.com/apache/tvm" class="project_title">Apache TVM</a>
+        <br>
+        <div class="project_intro">
+            TVM is an open deep learning compiler stack for cpu, gpu and specialized accelerators. I do serveral works
+            during my internship in TVM community. <br>
+
+            <ul>
+                <li>(Relax-Training) Working on the TVM Unity compiler and <a
+                        href="https://arxiv.org/abs/2311.02103">Relax IR</a>.
+                    Relax IR is the new generation graph-level IR of the TVM compiler stack.
+                    To train models in this IR, I developed an algorithm of automatic
+                    differentiation
+                    (AD) which is implemented as an IR transformation/pass.
+                    Also, many useful tools (like loss function, Optimizer) are integrated.
+                </li>
+                <li>
+                    (MLC-Lora) Enabling fine-tuning LLMs in edge devices using
+                    <a href="https://mlc.ai">Machine Learning Complication</a>.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <h3>Hobby Projects</h3>
+    <ul>
+        <li>
+            <a href="https://github.com/ACMClassOJ/TesutoHime">ACM Class
+                OnlineJudge</a>
+            <br>
+            <div class="project_intro">An Online Judge for students in SJTU. Previous maintainer. </div>
+        </li>
+
+        <li>
+            <a href="https://github.com/ACMClassOJ/TesutoHime">ACM Sekai</a>
+            <br>
+            <div class="project_intro">A forum for ACM Class students. Previous contributor.</div>
+        </li>
+
+        <li>
+            <a href="https://github.com/SiriusNEO/CoconutJVM">CoconutJVM</a>
             <br>
             <div class="project_intro">
-                Working on the TVM Unity compiler. Developed an algorithm of automatic differentiation (AD) and
-                a training workflow in <a href="https://arxiv.org/abs/2311.02103">Relax IR</a>.
+                A toy JVM (Java Virtual Machine) written in C++. Now it doesn't contain JIT complication so its
+                execution
+                engine is just a Java bytecode interpreter
             </div>
-        </div>
+            </div>
 
-        <h3>Course Projects in my B.S.</h3>
+        <li>
+            <a href="https://github.com/SiriusNEO/Moment">Moment</a>
+            <br>
+            <div class="project_intro">
+                Chatbots in Multi-Platforms with multiple useful plugins. Supported Platforms: Linux Shell, QQ (Mirai),
+                QQ (CQHTTP).</div>
+        </li>
 
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/Masterball" class="project_title">Masterball</a>
-            <span class="project_subtitle">Compiler Design, Java, LLVM, Compiler Optimization, Register Allocation,
-                JIT.</span> <br>
+        <li>
+            <a href="https://github.com/SiriusNEO/Frozen">
+                Frozen!</a><br>
+            <div class="project_intro">
+                A survival game implemented in QT framework.
+            </div>
+        </li>
+
+        <li>
+            <a href="https://github.com/SiriusNEO/Sudoku-Breaker">
+                Sudoku-Breaker</a><br>
+            <div class="project_intro">
+                Using Dancing-LinkX (DLX) algorithm to solve the Sudoku problem! Simple but beautiful.
+            </div>
+        </li>
+    </ul>
+
+    <h3>Course Projects in my B.S.</h3>
+    <ul>
+        <li>
+            <a href="https://github.com/SiriusNEO/Masterball">Masterball</a>
+            <span class="project_subtitle">"Compiler Design" Course Project</span> <br>
             <div class="project_intro">
                 A Compiler from a C++ & Java like to RV32I Assembly, with many optimizations on LLVM
                 IR, e.g. ADCE, CSE, SCCP, LICP.
                 Its performance is close to GCC O2 on testcases.
-                Received a <span style="color: red;">perfect score</span> in
+                Received a perfect score in
                 two different compilation courses. <br>
                 Also check out the sub-project for JIT (Just-in-time) complication. It's a virtual machine for LLVM
                 (quite simple):
                 <a href="https://github.com/SiriusNEO/DarkSwordVM">[DarkSwordVM]</a>.
             </div>
-        </div>
+            </div>
 
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/NightWizard" class="project_title">NightWizard</a>
-            <span class="project_subtitle">Computer Architecture, Verilog, C++, FPGA, Out-of-order Execution.</span>
+        <li>
+            <a href="https://github.com/SiriusNEO/NightWizard">NightWizard</a>
+            <span class="project_subtitle">"Computer Architecture" Course Project</span>
             <br>
             <div class="project_intro">
                 A RISC-V CPU implemented in Verilog HDL. It uses Tomasulo algorithm for dynamic
@@ -89,11 +155,11 @@
                 <a href="https://github.com/SiriusNEO/RISCV-Simulator-Pipeline">[Simulator-Pipeline]</a>,
                 <a href="https://github.com/SiriusNEO/RISCV-Simulator-Tomasulo">[Simulator-Tomasulo]</a>
             </div>
-        </div>
+            </div>
 
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/fscape" class="project_title">fscape</a>
-            <span class="project_subtitle">Operating System, File System, FUSE, Pure C</span> <br>
+        <li>
+            <a href="https://github.com/SiriusNEO/fscape">fscape</a>
+            <span class="project_subtitle">"Operating System" Course Project</span> <br>
             <div class="project_intro">
                 A File System Escape game. The file system is implemented by <a
                     herf="https://man7.org/linux/man-pages/man4/fuse.4.html">Linux FUSE</a>.
@@ -101,31 +167,33 @@
                 file system. Welcome to try breaking the SPEEDRUN record if you are a proficient
                 shell user!
             </div>
-        </div>
+            </div>
 
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/Alice" class="project_title">Alice</a>
-            <span class="project_subtitle">Model Checking, Linear Temporal Logic, C++</span> <br>
+        <li>
+            <a href="https://github.com/SiriusNEO/Alice">Alice</a>
+            <span class="project_subtitle">"Model Checking" Course Project</span> <br>
             <div class="project_intro">
                 Alice is an [A]utomatic [Li]near Temporal Logic [C]hecking Syst[e]m implemented in C++.
                 It implements serveral model checking algorithms described in class. And it can
                 check the correctness of given LTL formulas.
             </div>
-        </div>
+            </div>
 
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/DHTengu" class="project_title">DHTengu</a>
-            <span class="project_subtitle">Go, Distributed Hash Table, P2P</span> <br>
+        <li>
+            <a href="https://github.com/SiriusNEO/DHTengu">DHTengu</a>
+            <span class="project_subtitle">"PPCA" Course Project</span> <br>
             <div class="project_intro">
                 DHTengu is "DHT (Distributed Hash Table)" + "Tengu (a supernatural spirit)". It implements two
-                DHT protocols (Chord and Kademlia) in Go-lang. Then I developed a App based on it, which enables P2P
+                DHT protocols (Chord and Kademlia) in Go-lang. Then I developed an application based on it, which
+                enables
+                P2P
                 file sharing and music playing.
             </div>
-        </div>
+            </div>
 
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/ACMClass-TicketSystem" class="project_title">Ticket System</a>
-            <span class="project_subtitle">C++, Python, Web, Data Structure (B+ Tree)</span> <br>
+        <li>
+            <a href="https://github.com/SiriusNEO/ACMClass-TicketSystem">Ticket System</a>
+            <span class="project_subtitle">"Data Structure" Course Project</span> <br>
             <div class="project_intro">
                 A system for train ticket selling. It's the first collaborating projects in my B.S, which includes two
                 part: Frontend (Web) and Backend (Database).
@@ -133,73 +201,30 @@
                 <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> framework to develop a nice Web
                 application for users.
             </div>
-        </div>
+            </div>
 
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/Miko-Python-Interpreter" class="project_title">Python3 Interpreter</a>
-            <span class="project_subtitle">C++, Python, Antlr, Interpreter</span> <br>
+        <li>
+            <a href="https://github.com/SiriusNEO/Miko-Python-Interpreter">Python3 Interpreter</a>
+            <span class="project_subtitle">"Programming (A)" Course Project</span> <br>
             <div class="project_intro">
                 A toy Python 3 Interprter written in C++. The frontend parser is powered by <a
                     href="https://www.antlr.org/">Antlr</a> framework.
                 It doesn't support all syntax of Python programming language。
             </div>
-        </div>
+    </ul>
 
-        <h3>Hobby Projects</h3>
-
-        <div class="project">
-            <a href="https://github.com/ACMClassOJ/TesutoHime" class="project_title">ACM Class
-                OnlineJudge</a>
-            <span class="project_subtitle">Online Judge (OJ), Python, Web</span> <br>
-            <div class="project_intro">
-                Online Judge for students in SJTU. Previous maintainer.
-            </div>
-        </div>
-
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/CoconutJVM" class="project_title">CoconutJVM</a>
-            <span class="project_subtitle">JVM, Interpreter, C++</span> <br>
-            <div class="project_intro">
-                A toy JVM (Java Virtual Machine) written in C++. Now it doesn't contain JIT complication so its
-                execution
-                engine is just a Java bytecode interpreter
-            </div>
-        </div>
-
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/Moment" class="project_title">Moment</a>
-            <span class="project_subtitle">Chatbots, Python, Web, Tecent QQ</span> <br>
-            Chatbots in Multi-Platforms with multiple useful plugins. Supported Platforms: Linux Shell, QQ (Mirai),
-            QQ (CQHTTP).
-        </div>
-
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/Frozen" class="project_title">
-                Frozen!</a><span class="project_subtitle">C++, QT, Game</span><br>
-            A survival game implemented in QT framework.
-        </div>
-
-        <div class="project">
-            <a href="https://github.com/SiriusNEO/Sudoku-Breaker" class="project_title">
-                Sudoku-Breaker</a><span class="project_subtitle">C++, Algorithm</span><br>
-            Using Dancing-LinkX (DLX) algorithm to solve the Sudoku problem! Simple but beautiful.
-        </div>
-
-    </div>
-
-    </div>
-
+    <br>
     <footer></footer>
     <br>
 
     <!-- Footer -->
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
-        Last Edited, Jan. 13, 2024 |
-        Total views: <span id="busuanzi_value_site_pv"></span> |
+        Last Edited, Mar. 6, 2024 |
         Source code: <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, feel free to use and modify.
     </span>
     <a href="http://beian.miit.gov.cn/"><span style="color: grey; font-size: 12px"><i>闽ICP备2022013458号</i></span></a>
+
 </body>
 
 </html>
