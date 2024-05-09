@@ -2,19 +2,19 @@ body {
     margin: 50px auto;
     width: 70%;
     color: black;
-    font-family:'Times New Roman';
+    font-family: 'Times New Roman';
 }
 
-a:hover{
+a:hover {
     color: lightblue;
 }
 
-a{
+a {
     text-decoration: none;
     color: blue;
 }
 
-.top_button{
+.top_button {
     font-weight: bolder;
     font-style: normal;
     font-family: 'Arial Black';
@@ -28,20 +28,20 @@ a{
 }
 
 .profile {
-  margin: 1em;
-  font-size: 20px;
+    margin: 1em;
+    font-size: 18px;
 }
 
 .project {
-  margin: 0.75em;
+    margin: 0.75em;
 }
 
 .project_title {
-  color: black;
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: bolder;
-  font-style: normal;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: normal;
 }
 
 .project_subtitle {
@@ -78,15 +78,15 @@ a{
 }
 
 .education {
-  margin: 1em;
+    margin: 1em;
 }
 
 .education_term {
-  color: black;
-  font-weight: bold;
-  font-size: 17px;
-  font-style:italic;
-  margin-right: 5em;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    font-style: italic;
+    margin-right: 5em;
 }
 
 .cv_exp {
@@ -103,18 +103,22 @@ a{
     font-size: large;
 }
 
-nav ul, footer ul {
+nav ul,
+footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
 
-nav ul li, footer ul li {
+nav ul li,
+footer ul li {
     display: inline;
     margin-right: 20px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: black;
 }
 
