@@ -21,14 +21,12 @@ a {
 }
 
 .profile_block img {
-    width: 350px;
+    width: auto;
     height: auto;
-    float: left;
-    margin-right: 1.5em;
 }
 
 .profile {
-    margin: 1em;
+    margin: 0.5em;
     font-size: 18px;
 }
 
@@ -114,6 +112,10 @@ nav ul li,
 footer ul li {
     display: inline;
     margin-right: 20px;
+}
+
+h1 {
+    font-size: 40px;
 }
 
 h1,
