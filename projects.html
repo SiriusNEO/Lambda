@@ -25,17 +25,17 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<body>
+<body class="main_box">
 
 
     <!-- Navigation, some quick links -->
     <nav>
         <ul>
-            <li><a href="/" class="top_button">[Home]</a></li>
-            <li><a href="cv.html" class="top_button">[CV]</a></li>
-            <li><a href="publications.html" class="top_button">[Publications]</a></li>
-            <li><a href="projects.html" class="top_button">[Projects]</a></li>
-            <li><a href="https://me.tric.space/" class="top_button">[Blog]</a></li>
+            <li><a href="/" class="top_button">/home</a></li>
+            <li><a href="cv.html" class="top_button">/cv</a></li>
+            <!-- <li><a href="publications.html" class="top_button">[Publications]</a></li> -->
+            <li><a href="projects.html" class="top_button">/projects</a></li>
+            <li><a href="https://me.tric.space/" class="top_button">/blog</a></li>
         </ul>
     </nav>
 
@@ -45,15 +45,16 @@
     <h3>Research Projects & Open Source</h3>
 
     <div class="project">
-        <a href="" class="project_title">ParrotServe</a>
+        <a href="https://github.com/microsoft/ParrotServe" class="project_title">ParrotServe</a>
         <br>
         <div class="project_intro">
-            Parrot is a multi-tenant serving system for various LLM applications. This project is
-            done during my undergraduate internship in MSRA. As the project leader,
-            I implement the core part and many important algorithms in the system. This system highlights
+            ParrotServe is a distributed, multi-tenant serving system for various LLM applications. It's the open source of our <a href="publications.html">OSDI'24 paper</a>.
+            This project is done during my undergraduate internship in MSRA. As the project leader,
+            I implement the core part and many important algorithms in the system.
+            This system highlights
             the following techniques around the Semantic Variable abstraction:
             <ul>
-                <li>Data pipelining and asynchronous communication between requests.
+                <li>Automatically parallelize and batch LLM requests in complex LLM applications. Asynchronous communication between dependent requests.
                 </li>
                 <li>Performance objective deduction and DAG-aware scheduling.
                 </li>
@@ -65,25 +66,23 @@
 
     <div class="project">
         <!-- <img src="img/tvm-logo-small.png"> -->
-        <a href="https://github.com/apache/tvm" class="project_title">Apache TVM</a>
+        <a href="https://github.com/apache/tvm" class="project_title">Relax Training @ Apache TVM</a>
         <br>
         <div class="project_intro">
-            TVM is an open deep learning compiler stack for cpu, gpu and specialized accelerators. I do serveral works
-            during my internship in TVM community. <br>
-
-            <ul>
-                <li>(Relax-Training) Working on the TVM Unity compiler and <a
-                        href="https://arxiv.org/abs/2311.02103">Relax IR</a>.
-                    Relax IR is the new generation graph-level IR of the TVM compiler stack.
-                    To train models in this IR, I developed an algorithm of automatic
-                    differentiation
-                    (AD) which is implemented as an IR transformation/pass.
-                    Also, many useful tools (like loss function, Optimizer) are integrated.
-                </li>
-                <li>
-                    (MLC-Lora) Enabling fine-tuning LLMs in edge devices using
-                    <a href="https://mlc.ai">Machine Learning Complication</a>.
-                </li>
+            TVM is an open deep learning compiler stack for cpu, gpu and specialized accelerators. In this sub-project, I worked on the TVM Unity compiler and <a
+                        href="https://arxiv.org/abs/2311.02103">Relax IR</a> (The new generation graph-level IR) and successfully developed an end-to-end framework
+                        to train models in Relax IR. (<a href="https://www.youtube.com/watch?v=bsfpzMufyNw">TVMCon'23</a> |
+                        <a href="https://github.com/apache/tvm/pulls?q=is%3Apr+author%3Asiriusneo">PRs</a>)</li>
+                    <ul>
+                        <li>I developed an algorithm of automatic
+                            differentiation
+                            (AD) which is implemented as an IR transformation/pass. Also, many useful tools (like loss function, Optimizer) are integrated.
+                        </li>
+                        <li>I help to build the infrastructure of Relax IR, including many basic operators.
+                        </li>
+                        <li>Member of the <a href="https://github.com/mlc-ai">MLC community</a>.
+                        </li>
+                    </ul>
             </ul>
         </div>
     </div>
@@ -239,7 +238,7 @@
     <!-- Footer -->
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
-        Last Edited, Mar. 27, 2024 |
+        Last Edited, Sep. 13, 2024 |
         Source code: <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, feel free to use and modify.
     </span>
     <a href="http://beian.miit.gov.cn/"><span style="color: grey; font-size: 12px"><i>闽ICP备2022013458号</i></span></a>

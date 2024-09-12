@@ -1,8 +1,10 @@
+/* global config */
+
 body {
     margin: 50px auto;
     width: 70%;
     color: black;
-    font-family: 'Times New Roman';
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a:hover {
@@ -14,10 +16,42 @@ a {
     color: blue;
 }
 
+.main_box {
+    width: 60em;
+}
+
+h1,
+h2,
+h3 {
+    color: black;
+}
+
+/* nav */
+
 .top_button {
     font-weight: bolder;
     font-style: normal;
-    font-family: 'Arial Black';
+    font-family: 'Helvetica Neue';
+    font-size: 22px;
+}
+
+nav ul,
+footer ul {
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+
+nav ul li,
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* home */
+
+h1 { /* a.k.a Your name in the index page. */
+    font-size: 40px;
 }
 
 .profile_block img {
@@ -29,6 +63,65 @@ a {
     margin: 0.5em;
     font-size: 18px;
 }
+
+.research {
+    margin: 0.5em;
+    font-size: 18px;
+}
+
+.research li {
+    margin-top: 0.3em;
+}
+
+.news {
+    margin: 0.5em;
+    font-size: 16px;
+}
+
+.news li {
+    margin-top: 0.3em;
+}
+
+.pub {
+    margin: 0.75em;
+}
+
+.pub_title {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.pub_member {
+    color: black;
+    font-size: 16px;
+}
+
+.pub_member_me {
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.pub_conf {
+    color: deeppink;
+    font-size: 16;
+    font-style: italic;
+}
+
+.contact {
+    margin: 0.5em;
+    font-size: 16px;
+}
+
+.misc {
+    margin: 0.5em;
+    font-size: 16px;
+}
+
+/* projects */
 
 .project {
     margin: 0.75em;
@@ -52,28 +145,7 @@ a {
     color: black;
 }
 
-.pub {
-    margin: 0.75em;
-}
-
-.pub_title {
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bolder;
-    font-style: normal;
-}
-
-.pub_member {
-    color: black;
-    font-size: 14px;
-}
-
-.pub_conf {
-    color: deeppink;
-    font-size: 18;
-    font-style: italic;
-}
+/* cv */
 
 .education {
     margin: 1em;
@@ -97,43 +169,49 @@ a {
     margin-left: 10px;
 }
 
+.cv_exp_intro_td {
+    padding: 5px;
+    width: 100%;
+}
+
+.cv_exp_intro_td.div { /* Time */
+    font-size: 16px;
+}
+
+.cv_exp_intro_td.p { /* Intro */
+    font-size: 16px;
+}
+
+.cv_exp_intro {
+    font-size: 16px;
+}
+
+.cv_exp_logo_td {
+    padding: 5px;
+    width: 25%;
+}
+
+.cv_exp_title {
+    font-size: 18px;
+}
+
+.cv_exp_title_gray {
+    font-size: 18px;
+    color: gray;
+}
+
+.cv_exp_logo {
+    width: 180px;
+}
+
 .cv_list {
-    font-size: large;
+    font-size: 16px;
 }
 
-nav ul,
-footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
 
-nav ul li,
-footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-h1,
-h2,
-h3 {
-    color: black;
-}
+/* footer */
 
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
-}
-
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
 }

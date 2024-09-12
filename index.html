@@ -26,16 +26,16 @@
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </head>
 
-<body>
+<body class="main_box">
 
     <!-- Navigation, some quick links -->
     <nav>
         <ul>
-            <li><a href="/" class="top_button">[Home]</a></li>
-            <li><a href="cv.html" class="top_button">[CV]</a></li>
-            <li><a href="publications.html" class="top_button">[Publications]</a></li>
-            <li><a href="projects.html" class="top_button">[Projects]</a></li>
-            <li><a href="https://me.tric.space/" class="top_button">[Blog]</a></li>
+            <li><a href="/" class="top_button">/home</a></li>
+            <li><a href="cv.html" class="top_button">/cv</a></li>
+            <!-- <li><a href="publications.html" class="top_button">[Publications]</a></li> -->
+            <li><a href="projects.html" class="top_button">/projects</a></li>
+            <li><a href="https://me.tric.space/" class="top_button">/blog</a></li>
         </ul>
     </nav>
 
@@ -81,7 +81,9 @@
                             Please check out my <a href="cv.html">CV</a> if interested. <br><br>
 
                             I go by `SiriusNEO` on most websites. And I usually use `Chaos`
-                            as a variant of my real name.
+                            as a variant of my real name. (<a href="https://github.com/siriusneo">Github</a> | <a href="https://www.zhihu.com/people/chaofanlin">Zhihu</a> |
+                            <a href="https://scholar.google.com/citations?user=bhFlvKoAAAAJ">Scholar</a>)
+
                             <!-- Personally I appreciate two types of research works:
         Algorithms which are <span style="color: green;">simple, explainable</span> and
         <span style="color: green;">related to classical ideas in Computer Science</span>;
@@ -101,12 +103,12 @@
 
     <h2>Research</h2>
 
-    <div style="font-size: 18px;">
+    <div class="research">
         <p>
             My research interest mainly lies in <span style="color: red;">computer systems and
                 architecture</span>, specially in optimizing machine learning (<span style="color: red;">MLSys</span>)
             and other data intensive
-            applications.
+            applications. My long-term research goal is to make powerful AI accessible to everyone.
             <!-- I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
 bridge the gap between efficiency (low-level) and usability (user-side). -->
             <!-- I believe there is no silver bullet in designing and architecting. -->
@@ -120,25 +122,24 @@ there is no perfect solution for all ad-hoc reallife problems. -->
         </p>
 
         <ul>
-            <li>Serving system for LLM applications <a href="https://github.com/microsoft/ParrotServe">Parrot</a> (<a
-                    href="https://www.usenix.org/conference/osdi24">OSDI'24</a>).</li>
-            <li>Deep learning compiler <a href="https://tvm.apache.org">TVM</a>, specially two sub-projects:
-                Relax-Training and MLC-Lora.</li>
+            <li><b><a href="https://github.com/microsoft/ParrotServe">Parrot</a></b>: Serving system for LLM applications (Pulished in <a href="https://www.usenix.org/conference/osdi24">OSDI'24</a>).</li>
+            <li><b><a href="https://github.com/apache/tvm/pulls?q=is%3Apr+author%3Asiriusneo">Relax-Training (Related PRs)</a></b>: Training NNs (ResNet, LLM...) on device using <a href="https://arxiv.org/abs/2311.02103">Relax IR</a> of the deep learning compiler <a href="https://tvm.apache.org">TVM</a>.</li>
         </ul>
     </div>
 
-    <footer></footer>
-
     <h2>News</h2>
 
-    <div style="font-size: 18px;">
+    <div class="news">
 
-        <ul style="margin: 15px">
+        <ul>
+            <li>[2024/9] I will join <a href="https://team.doubao.com/en/?view_from=homepage_tab">Bytedance Seed (Doubao) Foundation Team</a>
+                this fall as a research intern. </li> </li>
             <li>[2024/6] Graduated from SJTU with <b>Zhiyuan Outstanding Student Scholarship</b>! My bachelor thesis
-                `Large Language Model Inference Serving System for Requests with Long System Prompts` is
-                awarded with <b>Excellent Bachelor Thesis (Top 1%)</b> in SJTU!</li>
+                <!-- `Large Language Model Inference Serving System for Requests with Long System Prompts` -->
+                is awarded with <b>Excellent Bachelor Thesis (Top 1%)</b> in SJTU!</li>
             <li>[2024/3] <b>Parrot</b> is accepted by OSDI'24! Code and paper are both released. </li>
-            <li>[2023/6] I will join the <a
+            <li>[2023/9] I will be joining IIIS, Tsinghua as a PhD student starting 24Fall. </li>
+            <li>[2023/6] I will join <a
                     href="https://www.microsoft.com/en-us/research/group/systems-and-networking-research-group-asia/">Systems
                     and Networking Research Group of Microsoft Research Asia</a> this summer as a research intern. </li>
             <li>[2023/3] Give a talk about training/fine-tuning NN models on edge devices using Automatic Differentiaton
@@ -147,24 +148,39 @@ there is no perfect solution for all ad-hoc reallife problems. -->
 
     </div>
 
-    <footer></footer>
+    <h2>Publications</h2>
+
+    <div class="pub">
+        <span class="pub_title">Parrot: Efficient Serving of LLM-based Applications with Semantic Variable</span><br>
+        <div class="pub_member">
+            <span class="pub_member_me">Chaofan Lin</span>, Zhenhua Han*, Chengruidong Zhang, Yuqing Yang*, Fan Yang, Chen Chen*, Lili Qiu
+        </div>
+        <div>
+            (* Corresponding author)
+        </div>
+        <div class="pub_conf">
+            18th USENIX Symposium on Operating Systems Design and Implementation (OSDI'24)
+        </div>
+        <a href="https://arxiv.org/abs/2405.19888">[arXiv]</a> | <a href="https://github.com/microsoft/ParrotServe">[code]</a>
+        | <a href="https://www.usenix.org/conference/osdi24/presentation/lin-chaofan">[conference page]</a>
+    </div>
+
 
     <h2>Contact</h2>
 
-    <div style="font-size: 18px;">
+    <div class="contact">
         Emails: (<a href="emails.html">...</a>)
         <ul style="margin: 15px">
             <li><a href="mailto:lcf24@mails.tsinghua.edu.cn">lcf24@mails.tsinghua.edu.cn</a> (For academic purpose) </li>
             <li><a href="mailto:siriusneox@outlook.com">siriusneox@outlook.com</a></li>
             <li><a href="mailto:chaosfunc@gmail.com">chaosfunc@gmail.com</a></li>
         </ul>
-        <p>Github: <a href="https://github.com/siriusneo">@SiriusNEO</a></p>
-        <p>Zhihu: <a href="https://www.zhihu.com/people/chaofanlin">@SiriusNEO</a></p>
+        <p>Address: FIT Building, Tsinghua University, Beijing, China, 100084</p>
     </div>
 
-    <footer></footer>
 
     <h2>Miscellaneous</h2>
+    <div class="misc">
     <ul>
         <!-- <li>I am an amateur enthusiast in: Math, Programming Language, Compilers.</li> -->
         <li>My Chinese name "Chaofan (超凡)" stands for "superordinary".</li>
@@ -175,14 +191,14 @@ there is no perfect solution for all ad-hoc reallife problems. -->
         <li>The style of this homepage is inspired by my Logic teacher, <a
                 href="https://basics.sjtu.edu.cn/~chen/">Yijia Chen</a>.</li>
     </ul>
+    </div>
 
-    <footer></footer>
     <br>
 
     <!-- Footer -->
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
-        Last Edited, Aug. 26, 2024 |
+        Last Edited, Sep. 13, 2024 |
         Total views: <span id="busuanzi_value_site_pv"></span> |
         Source code: <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, feel free to use and modify.
     </span>

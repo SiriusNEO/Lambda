@@ -25,16 +25,16 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<body>
+<body class="main_box">
 
     <!-- Navigation, some quick links -->
     <nav>
         <ul>
-            <li><a href="/" class="top_button">[Home]</a></li>
-            <li><a href="cv.html" class="top_button">[CV]</a></li>
-            <li><a href="publications.html" class="top_button">[Publications]</a></li>
-            <li><a href="projects.html" class="top_button">[Projects]</a></li>
-            <li><a href="https://me.tric.space/" class="top_button">[Blog]</a></li>
+            <li><a href="/" class="top_button">/home</a></li>
+            <li><a href="cv.html" class="top_button">/cv</a></li>
+            <!-- <li><a href="publications.html" class="top_button">[Publications]</a></li> -->
+            <li><a href="projects.html" class="top_button">/projects</a></li>
+            <li><a href="https://me.tric.space/" class="top_button">/blog</a></li>
         </ul>
     </nav>
 
@@ -45,65 +45,105 @@
         PDF version: <a href="resume.pdf">[resume-2024-05.pdf]</a>.
     </p>
 
+
+    <h2>Education</h2>
+
+    <table class="cv_exp">
+        <tbody>
+            <tr>
+                <td class="cv_exp_logo_td">
+                    <img src='img/thu-logo.png' class="cv_exp_logo">
+                </td>
+                <td class="cv_exp_intro_td">
+                    <class class="cv_exp_title_gray">Ph.D. in Computer Science</class>
+                    <class class="cv_exp_title"> | Tsinghua University</class>
+                    <div>Aug'22, 2024 - Present</div>
+                    <p>
+                        Member of Institute for Interdisciplinary Information Sciences (IIIS).
+                        Advisor: <a href="https://people.iiis.tsinghua.edu.cn/~gaomy/">Mingyu Gao</a>.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <table class="cv_exp">
+        <tbody>
+            <tr>
+                <td class="cv_exp_logo_td">
+                    <img src='img/sjtu-logo.png' class="cv_exp_logo">
+                </td>
+                <td class="cv_exp_intro_td">
+                    <class class="cv_exp_title_gray">B.S. in Computer Science</class>
+                    <class class="cv_exp_title"> | Shanghai Jiao Tong University</class>
+                    <div>Sep'1, 2020 - Jun'30, 2024</div>
+                    <p>
+                        Member of ACM Class, Zhiyuan College. Got a <span style="color: red;">distinguished GPA (94/100,
+                        Rank 1/36)</span> during my B.S. Advisors: <a href="https://wnzhang.net/">Weinan Zhang</a>,
+                        <a href="https://www.cs.sjtu.edu.cn/~chen-quan/">Quan Chen</a> and
+                        <a href="https://apex.sjtu.edu.cn/members/yyu">Yong Yu</a>.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
     <h2>Experience</h2>
 
-    <table border=0 class="cv_exp">
+    <table class="cv_exp">
         <tbody>
             <tr>
-                <td style="padding:5px;width:25%">
-                    <img src='img/ms-icon.jpg' width="60">
+                <td class="cv_exp_logo_td">
+                    <img src='img/bytedance-logo.png' class="cv_exp_logo">
                 </td>
-                <td style="padding:5px;width:100%">
-                    <class style="color:gray"><big>Internship</big> </class>
-                    <class><big> | Microsoft Research Asia </big></class>
-                    <br>
-                    June'20, 2023 - June'28, 2024
-                    <br>
-                    <br>Research topics: Distributed system, Large Language Models (LLMs) serving system.
-                    <br>Work with <a href="https://hzhua.github.io/">Zhenhua Han</a> and
-                    <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a>.
+                <td class="cv_exp_intro_td">
+                    <class class="cv_exp_title_gray">R&D Intern for MLSys</class>
+                    <class class="cv_exp_title"> | Bytedance Seed Foundation Team</class>
+                    <div>Sep'18, 2024 - Present</div>
+                    <p>
+                        Research topics: Deep Learning Compilers.
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border=0 class="cv_exp">
+    <table class="cv_exp">
         <tbody>
             <tr>
-                <td style="padding:5px;width:25%">
-                    <img src='img/cmucsd-icon.jpg' width="60">
+                <td class="cv_exp_logo_td">
+                    <img src='img/msr-logo.png' class="cv_exp_logo">
                 </td>
-                <td style="padding:5px;width:100%">
-                    <class style="color:gray"><big>Internship</big> </class>
-                    <class><big> | Catalyst, Carnegie Mellon University </big></class>
-                    <br>
-                    July'22, 2022 - June'23, 2023
-                    <br>
-                    <br>Research topics: Deep learning compilers, Graph-level IR for deep learning (Relax IR),
-                    Deployment of
-                    Large Language Models (mlc-llm).
-                    <br>Work with <a href="https://tqchen.com">Tianqi Chen</a>.
+                <td class="cv_exp_intro_td">
+                    <class class="cv_exp_title_gray">Research Intern</class>
+                    <class class="cv_exp_title"> | Microsoft Research Asia</class>
+                    <div>June'20, 2023 - June'28, 2024</div>
+                    <p>
+                        Research topics: Distributed system, Large Language Models (LLMs) serving system.
+                        Work with <a href="https://hzhua.github.io/">Zhenhua Han</a> and
+                        <a href="https://www.microsoft.com/en-us/research/people/yuqyang/">Yuqing Yang</a>.
                     </p>
                 </td>
             </tr>
         </tbody>
     </table>
 
-    <table border=0 class="cv_exp">
+    <table class="cv_exp">
         <tbody>
             <tr>
-                <td style="padding:5px;width:25%">
-                    <img src='img/sjtu-icon.png' width="60">
+                <td class="cv_exp_logo_td">
+                    <img src='img/catalyst.svg' class="cv_exp_logo">
                 </td>
-                <td style="padding:5px;width:100%">
-                    <class style="color:gray"><big>B.S. in Computer Science</big> </class>
-                    <class><big> | Shanghai Jiao Tong University </big></class>
-                    <br>
-                    Sep'1, 2020 - Present
-                    <br>
-                    <br>Member of ACM Class, Zhiyuan College. Got a <span style="color: red;">distinguished GPA (94/100,
-                        Rank 1/36)</span> during my B.S.
+                <td class="cv_exp_intro_td">
+                    <class class="cv_exp_title_gray">Internship</class>
+                    <class class="cv_exp_title"> | Catalyst, Carnegie Mellon University</class>
+                    <div>June'20, 2023 - June'28, 2024</div>
+                    <p>
+                        Research topics: Deep learning compilers, Graph-level IR for deep learning (Relax IR),
+                        Deployment of
+                        Large Language Models (mlc-llm).
+                        Work with <a href="https://tqchen.com">Tianqi Chen</a> and <a href="https://syfeng.net">Siyuan Feng</a>.
                     </p>
                 </td>
             </tr>
@@ -124,8 +164,10 @@
 
     <h2>Talks & Writing</h2>
 
-    I enjoy learning new things by taking notes. Here are some articles in my <a href="https://me.tric.space/">Blog</a>:
+    I enjoy learning new things by taking notes. Here are some articles in my <a href="https://me.tric.space/">Blog</a>.
+    Also welcome to check out my <a href="https://www.zhihu.com/people/chaofanlin">Zhihu</a>:
 
+    <div class="cv_list">
     <ul>
         <li>vLLM Source Code Analysis. <a href="https://me.tric.space/2023/07/10/vllm/">[Blog (in Chinese)]</a></li>
         <li>Tensor Expression (TE) in TVM. <a href="https://me.tric.space/2023/02/25/tvm-te/">[Blog (in Chinese)]</a>
@@ -133,6 +175,7 @@
         <li>Notes on Measure Theory. <a href="https://me.tric.space/2022/03/06/measure-theory-intro/">[Blog (in
                 Chinese)]</a></li>
     </ul>
+    </div>
 
     And the following are some materials of my talks & teaching.
 
@@ -185,7 +228,7 @@
     <!-- Footer -->
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
-        Last Edited, Jul. 17, 2024 |
+        Last Edited, Sep. 13, 2024 |
         Source code: <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, feel free to use and modify.
     </span>
     <a href="http://beian.miit.gov.cn/"><span style="color: grey; font-size: 12px"><i>闽ICP备2022013458号</i></span></a>
