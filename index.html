@@ -57,7 +57,7 @@
                     <td>
                         <div class="profile">
 
-                            I'm a first-year Ph.D. student in
+                            I'm a second-year Ph.D. student in
                             <a href="https://iiis.tsinghua.edu.cn">Institute for Interdisciplinary Information Sciences
                                 (IIIS)</a>,
                             <a href="https://www.tsinghua.edu.cn">Tsinghua University</a>
@@ -108,8 +108,15 @@
     <div class="research">
         <p>
             My research interest lies in building practical, scalable and efficient systems for
-            machine learning (<span style="color: red;">MLSys</span>), like serving system and deep learning compiler.
-            My long-term research goal is to make powerful AI accessible to everyone.
+            machine learning (<span style="color: red;">MLSys</span>) like serving system and deep learning compiler, with a special focus on
+            finding <span style="color: red;">optimization</span> opportunities in foundation models and using appropriate <span style="color: red;">abstractions to automate</span> them.
+            My long-term research goal is to make powerful AI accessible to everyone. Currently, I'm working on the following topics.
+            If you share the same interest with me, please don't hesitate to email me and we can schedule a discussion.
+            <ul>
+                <li>(System Level) <b>Efficient System for LLM Agents</b> on different scenarios (Cloud/On-Device, ReAct/Plan-and-Execute, Single Agent/Multiple Agents, ...).</li>
+                <li>(Algorithm/Kernel Level) <b>Efficient Sparse Attention</b> with its applications in long context LLM inference / reasoning. </li>
+            </ul>
+
             <!-- I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
 bridge the gap between efficiency (low-level) and usability (user-side). -->
             <!-- I believe there is no silver bullet in designing and architecting. -->
@@ -122,9 +129,11 @@ there is no perfect solution for all ad-hoc reallife problems. -->
             <a href="projects.html">[Projects]</a> for details. -->
         </p>
 
+        And some of my previous projects are listed below:
+
         <ul>
             <li><b><a href="https://github.com/microsoft/ParrotServe">ParrotServe</a></b>: Serving system for LLM
-                applications (Pulished in <a href="https://www.usenix.org/conference/osdi24">OSDI'24</a>).</li>
+                applications with Semantic Variable abstraction (Pulished in <a href="https://www.usenix.org/conference/osdi24">OSDI'24</a>).</li>
             <li><b><a href="https://github.com/apache/tvm/pulls?q=is%3Apr+author%3Asiriusneo">Relax-Training (Related
                         PRs)</a></b>: Training NNs (ResNet, LLM...) on device using <a
                     href="https://arxiv.org/abs/2311.02103">Relax IR</a> of the deep learning compiler <a
@@ -135,7 +144,24 @@ there is no perfect solution for all ad-hoc reallife problems. -->
 
     <h2 id="pub">Publications</h2>
 
+        <div>
+            (* decates Corresponding author)
+        </div>
+
     <ul style="list-style: decimal;">
+
+        
+    <li><div class="pub">
+        <span class="pub_title">Twilight: Adaptive Attention Sparsity with Hierarchical Top-p Pruning</span><br>
+        <div class="pub_member">
+            <span class="pub_member_me">Chaofan Lin</span>, Jiaming Tang, Shuo Yang, Hanshuo Wang, Tian Tang, Boyu Tian, Ion Stoica, Song Han, Mingyu Gao*
+        </div>
+        <div class="pub_conf">
+            The Thirty-Ninth Annual Conference on Neural Information Processing Systems <span class="pub_conf_name">(NeurIPS'25 Spotlight)</span>
+        </div>
+        <a href="https://arxiv.org/abs/2502.02770">[arXiv]</a> | <a
+        href="https://github.com/tsinghua-ideal/Twilight">[code]</a>
+    </div></li>
 
     <li><div class="pub">
         <span class="pub_title">Parrot: Efficient Serving of LLM-based Applications with Semantic Variable</span><br>
@@ -143,31 +169,16 @@ there is no perfect solution for all ad-hoc reallife problems. -->
             <span class="pub_member_me">Chaofan Lin</span>, Zhenhua Han*, Chengruidong Zhang, Yuqing Yang*, Fan Yang,
             Chen Chen*, Lili Qiu
         </div>
-        <div>
-            (* Corresponding author)
-        </div>
+
         <div class="pub_conf">
-            18th USENIX Symposium on Operating Systems Design and Implementation (OSDI'24)
+            18th USENIX Symposium on Operating Systems Design and Implementation <span class="pub_conf_name">(OSDI'24)</span>
         </div>
         <a href="https://arxiv.org/abs/2405.19888">[arXiv]</a> | <a
             href="https://github.com/microsoft/ParrotServe">[code]</a>
         | <a href="https://www.usenix.org/conference/osdi24/presentation/lin-chaofan">[conference page]</a>
     </div></li>
 
-    <li><div class="pub">
-        <span class="pub_title">Twilight: Adaptive Attention Sparsity with Hierarchical Top-p Pruning</span><br>
-        <div class="pub_member">
-            <span class="pub_member_me">Chaofan Lin</span>, Jiaming Tang, Shuo Yang, Hanshuo Wang, Tian Tang, Boyu Tian, Ion Stoica, Song Han, Mingyu Gao*
-        </div>
-        <div>
-            (* Corresponding author)
-        </div>
-        <div class="pub_conf">
-            Preprint
-        </div>
-        <a href="https://arxiv.org/abs/2502.02770">[arXiv]</a> | <a
-        href="https://github.com/tsinghua-ideal/Twilight">[code]</a>
-    </div></li>
+
     </ul>
 
 
@@ -176,13 +187,16 @@ there is no perfect solution for all ad-hoc reallife problems. -->
     <div class="news">
 
         <ul>
+            <li>[2025/9] <b>Twilight</b> is accepted by NeurIPS'25 as a <b>Spotlight</b> paper! Code and final version will be
+                released soon.
+            </li>
             <li>[2024/9] I will join <a href="https://team.doubao.com/en/?view_from=homepage_tab">ByteDance Seed
                     Foundation (Doubao / AML) Team</a>
                 this fall as a research intern. </li>
             </li>
             <li>[2024/6] Graduated from SJTU with <b>Zhiyuan Outstanding Student Scholarship</b>! My bachelor thesis
                 <!-- `Large Language Model Inference Serving System for Requests with Long System Prompts` -->
-                is awarded with <b>Excellent Bachelor Thesis (Top 1%)</b> in SJTU!
+                is awarded with <b>Best Bachelor Thesis (Top 1%)</b> in SJTU!
             </li>
             <li>[2024/3] <b>Parrot</b> is accepted by OSDI'24! Code and paper are both released. </li>
             <li>[2023/9] I will be joining IIIS, Tsinghua as a PhD student starting 24Fall. </li>
@@ -233,7 +247,7 @@ there is no perfect solution for all ad-hoc reallife problems. -->
     <!-- Footer -->
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
-        Last Edited, Feb. 9, 2025 |
+        Last Edited, Oct. 14, 2025 |
         Total views: <span id="busuanzi_value_site_pv"></span> |
         Source code: <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, feel free to use and modify.
     </span>

@@ -106,10 +106,16 @@ h1 { /* a.k.a Your name in the index page. */
 }
 
 .pub_conf {
-    color: deeppink;
+    color: black;
     font-size: 16;
     font-style: italic;
 }
+
+.pub_conf_name {
+    color: red;
+    font-weight: bold;
+}
+
 
 .contact {
     margin: 0.5em;
