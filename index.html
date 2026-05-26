@@ -61,7 +61,10 @@
                                 (IIIS)</a>,
                             <a href="https://www.tsinghua.edu.cn">Tsinghua University</a>
                             advised by
-                            <a href="http://people.iiis.tsinghua.edu.cn/~gaomy/index.html">Prof. Mingyu Gao</a>.
+                            <a href="http://people.iiis.tsinghua.edu.cn/~gaomy/index.html">Prof. Mingyu Gao</a>. I'm now
+                            also
+                            a research intern @
+                            <a href="https://www.deepseek.com/">DeepSeek-AI</a> Infra Team.
                             <br><br>
 
                             Previously I received my my B.Eng. in Computer Science from
@@ -107,98 +110,170 @@
     <div class="research">
         <p>
             My research interest lies in building practical, scalable and efficient systems for
-            machine learning (<span style="color: red;">MLSys</span>) like serving system and deep learning compiler.
+            machine learning (<span style="color: red;">MLSys</span>).
+            My work spans the full stack of ML systems, including algorithm-system co-design (<a
+                href="https://github.com/tsinghua-ideal/Twilight">Twilight</a>),
+            serving system (<a href="https://github.com/microsoft/ParrotServe">ParrotServe</a>)
+            , and deep learning compiler (Core maintainer @<a href="https://github.com/tile-ai/tilelang/">TileLang</a>,
+            contributors @<a href="https://tvm.apache.org/">TVM</a>).
             <!-- with a special focus on finding <span style="color: red;">optimization</span> opportunities in foundation models and using appropriate <span style="color: red;">abstractions to automate</span> them. -->
-            My long-term research goal is to make powerful AI accessible to everyone. 
+            My long-term research goal is to make powerful AI accessible to everyone.
         </p>
-            Currently, I'm working on the following topics. If you share the same interest with me, please don't hesitate to email me and we can schedule a discussion.
-            <ul>
-                <li><b>Researcher-friendly Programming Abstraction</b>. Recently, I'm interested at and actively contribute to <a href="https://github.com/tile-ai/tilelang/"><b>TileLang</b></a>, through
-                which we can swiftly implement efficient co-design algorithms like sparse/linear attention.</li>
-                <li><b>Efficient Attention/System for LLM Agents</b>, specially on memory(context) management problems in single ReAct agent w/ sub-agents architecture.</li>
-                <!-- <li><b>Efficient Sparse Attention</b> with its applications in long context LLM inference / reasoning.</li> -->
-            </ul>
+        Currently, I'm working on the following topics. If you share the same interest with me, please don't hesitate to
+        email me and we can schedule a discussion.
+        <ul>
+            <li><b>Deep Learning Compiler</b>. I'm now interested in the following topics: Multi-backend design in DL
+                compilers, Host Codegen / Host DSL, efficient auto-tuning system and Agent-friendly compiler design.
+                <!-- I'm a developer of <a
+                    href="https://github.com/tile-ai/tilelang/">TileLang</a>, through
+                which we can swiftly implement efficient co-design algorithms like sparse/linear attention.
+                I also contribute to <a href="https://tvm.apache.org/">TVM</a>. -->
+            </li>
+            <li><b>Efficient Attention/System for LLM Agents</b>, specially on memory(context) management problems in
+                single ReAct agent w/ sub-agents architecture.</li>
+            <!-- <li><b>Efficient Sparse Attention</b> with its applications in long context LLM inference / reasoning.</li> -->
+        </ul>
 
-            <!-- I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
+        <!-- I enjoy crafting <b>systems</b> and/or exploring efficient <b>algorithms</b> to
 bridge the gap between efficiency (low-level) and usability (user-side). -->
-            <!-- I believe there is no silver bullet in designing and architecting. -->
-            <!-- Hence
+        <!-- I believe there is no silver bullet in designing and architecting. -->
+        <!-- Hence
 there is no perfect solution for all ad-hoc reallife problems. -->
-            <!-- However, I will try my best to narrow the gap between theory and practice, hoping
+        <!-- However, I will try my best to narrow the gap between theory and practice, hoping
             that one
             day everyone can appreciate and benefit from great algorithms/systems. -->
-            <!-- You can check my <a href="#pub">[Publications]</a> /
+        <!-- You can check my <a href="#pub">[Publications]</a> /
             <a href="projects.html">[Projects]</a> for details. -->
- 
 
-        And some of my previous projects are listed below:
+
+        <!-- And some of my previous projects are listed below:
 
         <ul>
+            <li><b><a href="https://github.com/tsinghua-ideal/Twilight">Twilight / flash-topk-attention</a></b>:
+                Algorithm-system codesign for sparse attention.</li>
             <li><b><a href="https://github.com/microsoft/ParrotServe">ParrotServe</a></b>: Serving system for LLM
-                applications with Semantic Variable abstraction (Pulished in <a href="https://www.usenix.org/conference/osdi24">OSDI'24</a>).</li>
-            <li><b><a href="https://github.com/apache/tvm/pulls?q=is%3Apr+author%3Asiriusneo">Relax-Training (Related
-                        PRs)</a></b>: Training NNs (ResNet, LLM...) on device using <a
-                    href="https://arxiv.org/abs/2311.02103">Relax IR</a> of the deep learning compiler <a
-                    href="https://tvm.apache.org">TVM</a>.</li>
-        </ul>
+                applications with Semantic Variable abstraction.</li>
+            <li><b><a href="https://github.com/apache/tvm/pulls?q=is%3Apr+author%3Asiriusneo">Relax-Training</a></b>:
+                Training NNs (ResNet, LLM...) on device using <a href="https://arxiv.org/abs/2311.02103">Relax IR</a> of
+                the deep learning compiler <a href="https://tvm.apache.org">TVM</a>.</li>
+        </ul> -->
+
+        Beside the research, I also enjoy crafting some educational materials for helping people learn DSLs, some of my
+        works include: <a href="https://github.com/SiriusNEO/Triton-Puzzles-Lite">Triton-Puzzles-Lite</a>, <a
+            href="https://github.com/tile-ai/tilelang-puzzles">TileLang-Puzzles</a>. (total 1k+ stars)
     </div>
 
 
     <h2 id="pub">Publications</h2>
 
-        <div>
-            (* decates equivalent contributions, † decates the corresponding author)
-        </div>
+    <div>
+        (* decates equivalent contributions, † decates the corresponding author)
+    </div>
 
     <ul style="list-style: circle;">
-    <li><div class="pub">
-        <span class="pub_title">Twilight: Adaptive Attention Sparsity with Hierarchical Top-p Pruning</span><br>
-        <div class="pub_member">
-            <span class="pub_member_me">Chaofan Lin</span>, Jiaming Tang, Shuo Yang, Hanshuo Wang, Tian Tang, Boyu Tian, Ion Stoica, Song Han, Mingyu Gao†
-        </div>
-        <div class="pub_conf">
-            The Thirty-Ninth Annual Conference on Neural Information Processing Systems <span class="pub_conf_name">(NeurIPS'25 Spotlight)</span>
-        </div>
-        <a href="https://arxiv.org/abs/2502.02770">[arXiv]</a> | <a
-        href="https://github.com/tsinghua-ideal/Twilight">[code]</a>
-    </div></li>
+        <li>
+            <div class="pub">
+                <span class="pub_title">Twilight: Adaptive Attention Sparsity with Hierarchical Top-p Pruning</span><br>
+                <div class="pub_member">
+                    <span class="pub_member_me">Chaofan Lin</span>, Jiaming Tang, Shuo Yang, Hanshuo Wang, Tian Tang,
+                    Boyu Tian, Ion Stoica, Song Han, Mingyu Gao†
+                </div>
+                <div class="pub_conf">
+                    The Thirty-Ninth Annual Conference on Neural Information Processing Systems <span
+                        class="pub_conf_name">(NeurIPS'25 Spotlight)</span>
+                </div>
+                <a href="https://arxiv.org/abs/2502.02770">[arXiv]</a> | <a
+                    href="https://github.com/tsinghua-ideal/Twilight">[code]</a>
+            </div>
+        </li>
 
-    <li><div class="pub">
-        <span class="pub_title">Parrot: Efficient Serving of LLM-based Applications with Semantic Variable</span><br>
-        <div class="pub_member">
-            <span class="pub_member_me">Chaofan Lin</span>, Zhenhua Han†, Chengruidong Zhang, Yuqing Yang†, Fan Yang,
-            Chen Chen†, Lili Qiu
-        </div>
+        <li>
+            <div class="pub">
+                <span class="pub_title">Parrot: Efficient Serving of LLM-based Applications with Semantic
+                    Variable</span><br>
+                <div class="pub_member">
+                    <span class="pub_member_me">Chaofan Lin</span>, Zhenhua Han†, Chengruidong Zhang, Yuqing Yang†, Fan
+                    Yang,
+                    Chen Chen†, Lili Qiu
+                </div>
 
-        <div class="pub_conf">
-            18th USENIX Symposium on Operating Systems Design and Implementation <span class="pub_conf_name">(OSDI'24)</span>
-        </div>
-        <a href="https://huggingface.co/papers?date=2024-5-31">[🤗Hugging Face Daily Papers] |
-        <a href="https://arxiv.org/abs/2405.19888">[arXiv]</a> | <a
-            href="https://github.com/microsoft/ParrotServe">[code]</a>
-        | <a href="https://www.usenix.org/conference/osdi24/presentation/lin-chaofan">[conference page]</a>
-    </div></li>
-    
-    <li><div class="pub">
-        <span class="pub_title">Accelerating Large-Scale Reasoning Model Inference with Sparse Self-Speculative Decoding</span><br>
-        <div class="pub_member">
-            Yilong Zhao*, Jiaming Tang*, Kan Zhu, Zihao Ye, Chi-Chih Chang, <span class="pub_member_me">Chaofan Lin</span>, Jongseok Park, Guangxuan Xiao, Mohamed S. Abdelfattah, Mingyu Gao, Baris Kasikci, Song Han, Ion Stoica
-        </div>
-        <div class="pub_conf">
-            (Under review)
-        </div>
-        <a href="https://arxiv.org/abs/2512.01278">[arXiv]</a> | <a
-        href="https://github.com/sspec-project/SparseSpec">[code]</a>
-    </div></li>
+                <div class="pub_conf">
+                    18th USENIX Symposium on Operating Systems Design and Implementation <span
+                        class="pub_conf_name">(OSDI'24)</span>
+                </div>
+                <a href="https://huggingface.co/papers?date=2024-5-31">[🤗Hugging Face Daily Papers] |
+                    <a href="https://arxiv.org/abs/2405.19888">[arXiv]</a> | <a
+                        href="https://github.com/microsoft/ParrotServe">[code]</a>
+                    | <a href="https://www.usenix.org/conference/osdi24/presentation/lin-chaofan">[conference page]</a>
+            </div>
+        </li>
 
+        <li>
+            <div class="pub">
+                <span class="pub_title">Accelerating Large-Scale Reasoning Model Inference with Sparse Self-Speculative
+                    Decoding</span><br>
+                <div class="pub_member">
+                    Yilong Zhao*, Jiaming Tang*, Kan Zhu, Zihao Ye, Chi-Chih Chang, <span class="pub_member_me">Chaofan
+                        Lin</span>, Jongseok Park, Guangxuan Xiao, Mohamed S. Abdelfattah, Mingyu Gao, Baris Kasikci,
+                    Song Han, Ion Stoica
+                </div>
+                <div class="pub_conf">
+                    Ninth Annual Conference on Machine Learning and Systems <span
+                        class="pub_conf_name">(MLSys'26)</span>
+                </div>
+                <a href="https://arxiv.org/abs/2512.01278">[arXiv]</a> | <a
+                    href="https://github.com/sspec-project/SparseSpec">[code]</a>
+            </div>
+        </li>
 
-    <li><div class="pub">
-        <span class="pub_title">DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models</span><br>
-        <div class="pub_member">
-            DeepSeek-AI. <span class="pub_member_me">(As a contributor)</span>
-        </div>
-        <a href="https://arxiv.org/abs/2512.02556">[arXiv]</a> | <a href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2">[🤗Hugging Face Repo]</a>
-    </div></li>
+        <li>
+            <div class="pub">
+                <span class="pub_title">SparseForge: Efficient Semi-Structured LLM Sparsification via Annealing of Hessian-Guided Soft-Mask</span><br>
+                <div class="pub_member">
+                    Hanzuo Liu, <span class="pub_member_me">Chaofan
+                        Lin</span>, Weixuan Sun, Yulong Wang, Key, Rayying, Mingyu Gao
+                </div>
+                <div class="pub_conf">
+                    (Under review)
+                </div>
+                <a href="https://arxiv.org/abs/2605.06402">[arXiv]</a> | <a
+                    href="https://github.com/tsinghua-ideal/SparseForge">[code]</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="pub">
+                <span class="pub_title">Pedestal: Fully Disaggregated LLM Serving with Computational Memory Pool</span><br>
+                <div class="pub_conf">
+                    (Under review)
+                </div>
+            </div>
+        </li>
+
+        Tech Reports.
+
+        <li>
+            <div class="pub">
+                <span class="pub_title">DeepSeek-V4: Towards Highly Efficient Million-Token Context
+                    Intelligence</span><br>
+                <div class="pub_member">
+                    DeepSeek-AI. <span class="pub_member_me">(As a contributor)</span>
+                </div>
+                <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf">[Tech Report]</a>
+                | <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro">[🤗Hugging Face Repo]</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="pub">
+                <span class="pub_title">DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models</span><br>
+                <div class="pub_member">
+                    DeepSeek-AI. <span class="pub_member_me">(As a contributor)</span>
+                </div>
+                <a href="https://arxiv.org/abs/2512.02556">[arXiv]</a> | <a
+                    href="https://huggingface.co/deepseek-ai/DeepSeek-V3.2">[🤗Hugging Face Repo]</a>
+            </div>
+        </li>
 
     </ul>
 
@@ -207,10 +282,14 @@ there is no perfect solution for all ad-hoc reallife problems. -->
 
     <div class="news">
 
-        <ul><li>[2025/11] I will join the system/infra team of <a href="https://www.deepseek.com/">DeepSeek-AI</a>
+        <ul>
+            <li>[2026/5] Attend <a href="https://mlsys.org/">MLSys'26</a> @ Bellevue, WA and poster our work on sparse
+                self-speculative decoding. </li>
+            <li>[2025/11] I will join the system/infra team of <a href="https://www.deepseek.com/">DeepSeek-AI</a>
                 this fall as a research intern.
             </li>
-            <li>[2025/9] <b>Twilight</b> is accepted by NeurIPS'25 as a <b>Spotlight</b> paper! Code and final version will be
+            <li>[2025/9] <b>Twilight</b> is accepted by NeurIPS'25 as a <b>Spotlight</b> paper! Code and final version
+                will be
                 released soon.
             </li>
             <li>[2024/9] I will join <a href="https://team.doubao.com/en/?view_from=homepage_tab">ByteDance Seed
@@ -270,11 +349,11 @@ there is no perfect solution for all ad-hoc reallife problems. -->
     <!-- Footer -->
     <span style="color: grey; margin-right: 1em;">
         Copyright© 2022 Chaofan Lin |
-        Last Edited, Dec. 4, 2025 |
+        Last Edited, May 25, 2026 |
         Total views: <span id="busuanzi_value_site_pv"></span> |
         Source code: <a href="https://github.com/SiriusNEO/Lambda">Lambda</a>, feel free to use and modify.
     </span>
-    <a href="http://beian.miit.gov.cn/"><span style="color: grey; font-size: 12px"><i>闽ICP备2022013458号</i></span></a>
+    <!-- <a href="http://beian.miit.gov.cn/"><span style="color: grey; font-size: 12px"><i>闽ICP备2022013458号</i></span></a> -->
 </body>
 
 </html>
